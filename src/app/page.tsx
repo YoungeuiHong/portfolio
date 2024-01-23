@@ -1,7 +1,9 @@
+import Introduction from "@/sections/introduction";
+
 export default function Home() {
   return (
     <main>
-      <h1>Main Page</h1>
+      <Introduction />
     </main>
-  )
+  );
 }
