@@ -8,8 +8,6 @@ export default function ScrollNavigator() {
     const handleScroll = () => {
       if (window.scrollY > 1) {
         setScroll(true);
-      } else {
-        setScroll(false);
       }
     };
 

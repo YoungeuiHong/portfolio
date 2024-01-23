@@ -11,13 +11,13 @@
     left: 50%;
     transform: translateX(-50%);
     opacity: 1;
-    animation: startTxtArea 1.5s
+    animation: startTxtArea
 }
 
 #mvArea .scrollNavWrap .scrollNav {
     position: absolute;
     top: 0;
-    color: #000000;
+    color: #C0C0C0;
     font-size: 11px;
     animation: equallyBound 1.4s ease-out infinite
 }
@@ -28,7 +28,7 @@
     display: inline-block;
     width: 1px;
     height: 80px;
-    background-color: #000000;
+    background-color: #C0C0C0;
     left: 14px;
     bottom: -130px;
     animation: lineMove .9s ease-in-out infinite
