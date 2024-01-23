@@ -1,0 +1,109 @@
+#mvArea {
+    position: relative;
+}
+
+#mvArea .scrollNavWrap {
+    display: block!important;
+    position: absolute;
+    width: 30px;
+    height: 130px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    animation: startTxtArea 1.5s
+}
+
+#mvArea .scrollNavWrap .scrollNav {
+    position: absolute;
+    top: 0;
+    color: #000000;
+    font-size: 11px;
+    animation: equallyBound 1.4s ease-out infinite
+}
+
+#mvArea .scrollNavWrap .scrollNav:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 1px;
+    height: 80px;
+    background-color: #000000;
+    left: 14px;
+    bottom: -130px;
+    animation: lineMove .9s ease-in-out infinite
+}
+
+#mvArea.resize .scrollNavWrap {
+    opacity: 0;
+    animation: none;
+}
+
+#mvArea.resize .scrollNavWrap .scrollNav {
+    opacity: 0;
+    animation: none;
+}
+
+#mvArea.resize .scrollNavWrap .scrollNav:after {
+    opacity: 0;
+    animation: none;
+}
+
+@keyframes startTxtArea {
+    0% {
+        opacity: 0
+    }
+
+    93% {
+        opacity: 0
+    }
+
+    95% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes equallyBound {
+    0% {
+        top: 0
+    }
+
+    50% {
+        top: 5px
+    }
+
+    to {
+        top: 0
+    }
+}
+
+@keyframes lineMove {
+    0% {
+        height: 0;
+        bottom: -12px
+    }
+
+    15% {
+        height: 12px;
+        bottom: -24px
+    }
+
+    50% {
+        height: 80px;
+        bottom: -92px
+    }
+
+    85% {
+        height: 12px;
+        bottom: -118px
+    }
+
+    to {
+        height: 0;
+        bottom: -130px
+    }
+}
