@@ -20,16 +20,17 @@ export default function SectionLayout({
         sx={{
           marginTop: 0,
           width: "100%",
-          textAlign: "center",
         }}
         spacing={2}
       >
-        <Typography
-          id={id}
-          sx={{ fontWeight: 700, fontSize: "3rem", paddingTop: 10 }}
-        >
-          {title}
-        </Typography>
+        <div style={{ textAlign: "center" }}>
+          <Typography
+            id={id}
+            sx={{ fontWeight: 700, fontSize: "3rem", paddingTop: 10 }}
+          >
+            {title}
+          </Typography>
+        </div>
         {children}
       </Stack>
     </FadeInContainer>

@@ -1,7 +1,12 @@
-import { Stack, Chip } from "@mui/material";
+import { Stack, Chip, ChipPropsSizeOverrides } from "@mui/material";
+import { OverridableStringUnion } from "@mui/types";
+import { SxProps } from "@mui/system";
+import { Theme } from "@mui/material/styles/createTheme";
 
 interface ChipListProps {
   chips: string[];
+  size?: OverridableStringUnion<"small" | "medium", ChipPropsSizeOverrides>;
+  stackSx?: SxProps<Theme>;
 }
 
 const colors = [
@@ -14,14 +19,15 @@ const colors = [
 ];
 
 const count_color = colors.length;
-export default function ChipList({ chips }: ChipListProps) {
+export default function ChipList({ chips, size, stackSx }: ChipListProps) {
   return (
-    <Stack direction={"row"} spacing={0.3} sx={{ margin: 0.5 }}>
+    <Stack direction={"row"} spacing={0.3} sx={{ ...stackSx }}>
       {chips.map((chip, index) => (
         <Chip
           key={index}
           label={chip}
-          sx={{ backgroundColor: colors[index % count_color] }}
+          size={size ?? "small"}
+          sx={{ backgroundColor: colors[index % count_color], borderRadius: 2 }}
         />
       ))}
     </Stack>

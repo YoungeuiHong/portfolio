@@ -9,7 +9,7 @@ export const MENUS: Menu[] = [
     title: "career",
   },
   {
-    id: "project",
+    id: "projects",
     title: "projects",
   },
 ];

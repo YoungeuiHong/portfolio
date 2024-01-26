@@ -22,7 +22,9 @@ export default function CareerCard({ career }: CareerCardProps) {
       {
         title: "🛠 기술 스택",
         type: "ReactNode",
-        content: <ChipList chips={career.techStack} />,
+        content: (
+          <ChipList chips={career.techStack} stackSx={{ ml: 2.3, mt: 0.5 }} />
+        ),
       },
     ];
   };

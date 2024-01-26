@@ -4,12 +4,18 @@ import Introduction from "@/sections/introduction";
 import Career from "@/sections/career";
 import Header from "@/sections/header";
 import { createTheme, ThemeProvider } from "@mui/material";
+import Project from "@/sections/project";
 
 const pretendard = localFont({
   src: [
     {
       path: "./font/Pretendard-Regular.woff2",
       weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./font/Pretendard-Medium.woff2",
+      weight: "500",
       style: "normal",
     },
     {
@@ -49,6 +55,7 @@ export default function Home() {
         <Header />
         <Introduction />
         <Career />
+        <Project />
       </ThemeProvider>
     </main>
   );
