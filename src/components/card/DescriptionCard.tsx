@@ -32,7 +32,7 @@ export default function DescriptionCard({
       direction={"column"}
       sx={{
         backgroundColor: grey[100],
-        width: 410,
+        width: 430,
         borderRadius: 1,
         p: 1,
         mt: 1,

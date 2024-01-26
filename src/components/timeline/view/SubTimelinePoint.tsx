@@ -29,9 +29,9 @@ export default function SubTimelinePoint({
         {!last && <TimelineConnector sx={{ backgroundColor: grey[300] }} />}
       </TimelineSeparator>
       <TimelineContent>
-        <h4 style={{ margin: 0, color: grey[800], fontWeight: 500 }}>{name}</h4>
+        <h4 style={{ margin: 0, color: grey[800], fontWeight: 400 }}>{name}</h4>
         {content && (
-          <span style={{ margin: 0, color: grey[600], fontWeight: 500 }}>
+          <span style={{ margin: 0, color: grey[600], fontWeight: 400 }}>
             {content}
           </span>
         )}

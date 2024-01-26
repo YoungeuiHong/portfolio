@@ -17,18 +17,16 @@ export default function SectionLayout({
     <FadeInContainer>
       <Stack
         alignItems={"center"}
-        justifyContent={"center"}
         sx={{
           marginTop: 0,
           width: "100%",
-          minHeight: "100vh",
           textAlign: "center",
         }}
         spacing={2}
       >
         <Typography
           id={id}
-          sx={{ fontWeight: 900, fontSize: "3rem", paddingTop: 10 }}
+          sx={{ fontWeight: 700, fontSize: "3rem", paddingTop: 10 }}
         >
           {title}
         </Typography>

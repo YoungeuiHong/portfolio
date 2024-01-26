@@ -7,7 +7,7 @@ interface TextLogoProps {
 export default function TextLogo({ logoText }: TextLogoProps) {
   return (
     <Link href="/" style={{ textDecoration: "none", marginRight: "8px" }}>
-      <Typography sx={{ color: "#000000", fontWeight: 800, fontSize: 18 }}>
+      <Typography sx={{ color: "#000000", fontWeight: 700, fontSize: 18 }}>
         {logoText}
       </Typography>
     </Link>

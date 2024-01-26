@@ -40,7 +40,7 @@ export default function MainTimelinePoint({
         {!last && <TimelineConnector sx={{ backgroundColor: grey[300] }} />}
       </TimelineSeparator>
       <TimelineContent sx={{ pt: 1, pb: 2 }}>
-        <h3 style={{ margin: 0, color: "#000000", fontWeight: 600 }}>{name}</h3>
+        <h3 style={{ margin: 0, color: "#000000", fontWeight: 700 }}>{name}</h3>
         {mainDescription && <CareerCard career={mainDescription} />}
       </TimelineContent>
     </TimelineItem>

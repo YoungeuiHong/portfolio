@@ -12,7 +12,7 @@ export default function AboutMe() {
           wrapper={"span"}
           cursor={true}
           repeat={Infinity}
-          style={{ fontSize: "2em", width: "6.9em" }}
+          style={{ fontSize: "2em", width: "7em" }}
         />
         <span style={{ fontSize: "2em" }}>추구하는</span>
       </div>
