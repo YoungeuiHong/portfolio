@@ -14,7 +14,7 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     title: "돌돌밋",
-    thumbnail: "/assets/project/thumbnail/doldolmeet.png",
+    thumbnail: "/assets/image/project/thumbnail/doldolmeet.png",
     techStack: ["Next.js", "TypeScript", "React Query", "Jotai"],
     description:
       "비대면 팬미팅, 즉 영통 팬싸를 쉽고 편하게 즐길 수 있도록 영상통화 및 대기열 관리 기능을 구현한 사이트입니다.",
@@ -28,7 +28,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "포트폴리오 사이트",
-    thumbnail: "/assets/project/thumbnail/portfolio.png",
+    thumbnail: "/assets/image/project/thumbnail/portfolio.png",
     techStack: ["Next.js", "TypeScript", "Material UI"],
     description: "개인 포트폴리오 사이트입니다.",
     links: {
@@ -39,7 +39,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "엑셀 Export / Import 모듈",
-    thumbnail: "/assets/project/thumbnail/excel.png",
+    thumbnail: "/assets/image/project/thumbnail/excel.png",
     techStack: ["React", "Java", "Apache POI"],
     description:
       "엑셀 Export / Import 기능을 쉽게 구현할 수 있도록 개발한 모듈입니다.",
