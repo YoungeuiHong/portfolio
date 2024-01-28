@@ -4,13 +4,18 @@ import { useEffect, useState } from "react";
 import ScrollProgressBar from "@/components/scroll/ScrollProgressBar";
 import TextLogo from "@/sections/header/view/TextLogo";
 import MenuBar from "./view/MenuBar";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const [showHeader, setShowHeader] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const pathname = usePathname();
 
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
-    setShowHeader(currentScrollPos > 5);
+
+    if (pathname === "/") {
+      setShowHeader(currentScrollPos > 5);
+    }
   };
 
   useEffect(() => {
