@@ -7,6 +7,7 @@ interface ChipListProps {
   chips: string[];
   size?: OverridableStringUnion<"small" | "medium", ChipPropsSizeOverrides>;
   stackSx?: SxProps<Theme>;
+  chipSx?: SxProps<Theme>;
 }
 
 const colors = [
@@ -19,17 +20,33 @@ const colors = [
 ];
 
 const count_color = colors.length;
-export default function ChipList({ chips, size, stackSx }: ChipListProps) {
+export default function ChipList({
+  chips,
+  size,
+  stackSx,
+  chipSx,
+}: ChipListProps) {
   return (
-    <Stack direction={"row"} spacing={0.3} sx={{ ...stackSx }}>
-      {chips.map((chip, index) => (
-        <Chip
-          key={index}
-          label={chip}
-          size={size ?? "small"}
-          sx={{ backgroundColor: colors[index % count_color], borderRadius: 2 }}
-        />
-      ))}
+    <Stack
+      direction={"row"}
+      spacing={0.3}
+      sx={{ ...stackSx }}
+      useFlexGap
+      flexWrap="wrap"
+    >
+      {chips &&
+        chips.map((chip, index) => (
+          <Chip
+            key={index}
+            label={chip}
+            size={size ?? "small"}
+            sx={{
+              backgroundColor: colors[index % count_color],
+              borderRadius: 2,
+              ...chipSx,
+            }}
+          />
+        ))}
     </Stack>
   );
 }

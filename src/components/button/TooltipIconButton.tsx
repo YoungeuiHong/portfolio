@@ -1,8 +1,9 @@
-import { IconButton, Tooltip } from "@mui/material";
+import { Icon, IconButton, Theme, Tooltip } from "@mui/material";
 import { ReactNode } from "react";
+import { SxProps } from "@mui/system";
 
 interface TooltipIconButtonProps {
-  icon: ReactNode;
+  icon: ReactNode | string;
   tooltip: string;
   onClick: () => void;
   iconSize?: number;
@@ -19,6 +20,7 @@ interface TooltipIconButtonProps {
     | "top-end"
     | "top-start"
     | "top";
+  buttonSx?: SxProps<Theme>;
 }
 
 export default function TooltipIconButton({
@@ -27,6 +29,7 @@ export default function TooltipIconButton({
   onClick,
   iconSize = 30,
   tooltipPlacement = "bottom",
+  buttonSx,
 }: TooltipIconButtonProps) {
   return (
     <Tooltip title={tooltip} placement={tooltipPlacement}>
@@ -36,9 +39,10 @@ export default function TooltipIconButton({
           "& svg": {
             fontSize: iconSize,
           },
+          ...buttonSx,
         }}
       >
-        {icon}
+        {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
       </IconButton>
     </Tooltip>
   );

@@ -10,11 +10,9 @@ import {
 import ChipList from "@/components/chip/ChipList";
 import TooltipIconButton from "@/components/button/TooltipIconButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import DescriptionIcon from "@mui/icons-material/Description";
-import ArticleIcon from "@mui/icons-material/Article";
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import { Project } from "@/data/project";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface ProjectCardProps {
   project: Project;
@@ -22,10 +20,11 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   const { title, thumbnail, techStack, description, links } = project;
+  const router = useRouter();
 
   return (
     <Card sx={{ mt: 1 }}>
-      <Link href={"/"} style={{ textDecoration: "none" }}>
+      <Link href={`/project/${project.id}`} style={{ textDecoration: "none" }}>
         <CardMedia
           sx={{
             height: 200,
@@ -39,7 +38,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         />
       </Link>
       <CardContent>
-        <Link href={"/"} style={{ textDecoration: "none", color: "#000000" }}>
+        <Link
+          href={`/project/${project.id}`}
+          style={{ textDecoration: "none", color: "#000000" }}
+        >
           <Typography
             gutterBottom
             variant="h5"
@@ -56,45 +58,25 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </CardContent>
       <CardActions>
         <Stack direction={"row"}>
-          {links.detail && (
-            <TooltipIconButton
-              icon={<DescriptionIcon />}
-              tooltip={"상세 설명"}
-              onClick={() => {}}
-              iconSize={25}
-            />
-          )}
-          {links.github && (
-            <TooltipIconButton
-              icon={<GitHubIcon />}
-              tooltip={"GitHub"}
-              onClick={() => {
-                window.open(links.github);
-              }}
-              iconSize={25}
-            />
-          )}
-
-          {links.posting && (
-            <TooltipIconButton
-              icon={<ArticleIcon />}
-              tooltip={"관련 포스팅"}
-              onClick={() => {
-                window.open(links.posting);
-              }}
-              iconSize={25}
-            />
-          )}
-          {links.demo && (
-            <TooltipIconButton
-              icon={<PlayCircleIcon />}
-              tooltip={"데모"}
-              onClick={() => {
-                window.open(links.demo);
-              }}
-              iconSize={25}
-            />
-          )}
+          {links &&
+            links.map((link, index) => (
+              <TooltipIconButton
+                key={index}
+                icon={link.icon === "github" ? <GitHubIcon /> : link.icon}
+                tooltip={link.tooltip}
+                onClick={() => {
+                  if (!link.href) {
+                    return;
+                  }
+                  if (link.internal) {
+                    router.push(link.href);
+                  } else {
+                    window.open(link.href);
+                  }
+                }}
+                iconSize={25}
+              />
+            ))}
         </Stack>
       </CardActions>
     </Card>
