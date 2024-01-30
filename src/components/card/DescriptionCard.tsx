@@ -39,7 +39,11 @@ export default function DescriptionCard({
       }}
     >
       {descriptions.length &&
-        descriptions.map((des, index) => renderDescription(des, index))}
+        descriptions.map((des, index) => (
+          <div key={`description-card-${des.title}-${index}`}>
+            {renderDescription(des, index)}
+          </div>
+        ))}
     </Stack>
   );
 }
