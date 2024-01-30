@@ -14,7 +14,7 @@ export default function TechStack() {
       <Stack direction={"row"}>
         {FRONTEND_TECH_STACK.map((tech, index) => (
           <TooltipImageIcon
-            key={index}
+            key={`tootip-image-icon-${tech.name}`}
             src={tech.icon}
             tooltip={tech.name}
             width={100}
@@ -25,7 +25,7 @@ export default function TechStack() {
       <Stack direction={"row"}>
         {BACKEND_TECH_STACK.map((tech, index) => (
           <TooltipImageIcon
-            key={index}
+            key={`tootip-image-icon-${tech.name}`}
             src={tech.icon}
             tooltip={tech.name}
             width={100}
@@ -34,7 +34,7 @@ export default function TechStack() {
         ))}
         {DEVOPS_TECH_STACK.map((tech, index) => (
           <TooltipImageIcon
-            key={index}
+            key={`tootip-image-icon-${tech.name}`}
             src={tech.icon}
             tooltip={tech.name}
             width={100}
