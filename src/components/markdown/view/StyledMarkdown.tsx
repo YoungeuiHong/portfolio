@@ -31,31 +31,16 @@ const StyledMarkdown = styled("div")(({ theme }) => {
 
     // Blockquote
     "& blockquote": {
-      lineHeight: 1.5,
-      fontSize: "1.5em",
-      margin: "40px auto",
+      margin: "0 auto",
       position: "relative",
-      fontFamily: "Georgia, serif",
-      padding: theme.spacing(3, 3, 3, 8),
-      color: theme.palette.text.secondary,
+      padding: theme.spacing(1, 1, 3, 3),
+      color: theme.palette.text.primary,
       borderRadius: theme.shape.borderRadius * 2,
       backgroundColor: alpha(theme.palette.grey[500], 0.12),
-      [theme.breakpoints.up("md")]: {
-        width: "80%",
-      },
+      width: "100%",
+      [theme.breakpoints.up("md")]: {},
       "& p, & span": {
         marginBottom: 0,
-        fontSize: "inherit",
-        fontFamily: "inherit",
-      },
-      "&:before": {
-        left: 16,
-        top: -8,
-        display: "block",
-        fontSize: "3em",
-        content: '"\\201C"',
-        position: "absolute",
-        color: theme.palette.text.disabled,
       },
     },
 
