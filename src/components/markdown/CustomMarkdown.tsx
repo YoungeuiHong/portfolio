@@ -14,7 +14,7 @@ interface CustomMarkdownProps {
 // ReactMarkdown의 components
 const components = {
   img: ({ ...props }) => (
-    <div style={{ position: "relative" }}>
+    <span style={{ position: "relative" }}>
       <Image
         src={props.src}
         alt={props.alt}
@@ -24,7 +24,7 @@ const components = {
         style={{ borderRadius: 2, width: "100%", height: "auto" }}
         {...props}
       />
-    </div>
+    </span>
   ),
   a: ({ ...props }) => {
     const isHttp = props.href.includes("http");
