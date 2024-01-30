@@ -4,7 +4,7 @@ import SectionLayout from "@/sections/layout";
 
 export default function Career() {
   return (
-    <SectionLayout id={"career"} title={"Career"}>
+    <SectionLayout id={"career"} title={"경력"}>
       <CustomTimeline timelines={TIMELINES} />
     </SectionLayout>
   );

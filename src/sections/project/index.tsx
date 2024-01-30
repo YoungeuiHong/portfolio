@@ -6,7 +6,7 @@ import { PROJECTS } from "@/data/project";
 
 export default function Projects() {
   return (
-    <SectionLayout id={"projects"} title={"Projects"}>
+    <SectionLayout id={"projects"} title={"프로젝트"}>
       <Grid container maxWidth={"lg"} spacing={3}>
         {PROJECTS.map((project, index) => (
           <Grid key={index} item xs={12} sm={6} md={4}>

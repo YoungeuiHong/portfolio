@@ -5,11 +5,15 @@ export interface Menu {
 
 export const MENUS: Menu[] = [
   {
+    id: "tech-stack",
+    title: "기술 스택",
+  },
+  {
     id: "career",
-    title: "career",
+    title: "경력",
   },
   {
     id: "projects",
-    title: "projects",
+    title: "프로젝트",
   },
 ];
