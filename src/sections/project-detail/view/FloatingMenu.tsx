@@ -8,11 +8,11 @@ interface FloatingMenuProps {
 
 export default function FloatingMenu({ links }: FloatingMenuProps) {
   return (
-    <FloatingStack top={"120px"} right={"10vw"}>
+    <FloatingStack top={"120px"} right={"10vw"} spacing={1}>
       {links &&
         links.map((link, index) => {
           if (!link.internal) {
-            return <MenuButton key={index} link={link} />;
+            return <MenuButton key={`menu-button-${index}`} link={link} />;
           }
         })}
     </FloatingStack>

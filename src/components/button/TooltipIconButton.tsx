@@ -36,6 +36,9 @@ export default function TooltipIconButton({
       <IconButton
         onClick={onClick}
         sx={{
+정          width: iconSize,
+          height: iconSize,
+          p: 3,
           "& svg": {
             fontSize: iconSize,
           },
