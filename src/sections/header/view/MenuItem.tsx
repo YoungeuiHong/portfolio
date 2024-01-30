@@ -7,7 +7,7 @@ export default function MenuItem({ id, title }: Menu) {
     <Link href={`/#${id}`} style={{ textDecoration: "none" }}>
       <Typography
         sx={{
-          fontSize: 18,
+          fontSize: 16,
           color: "#000000",
           fontWeight: 800,
           mx: 2,

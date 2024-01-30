@@ -26,7 +26,8 @@ export default function SectionLayout({
         <div style={{ textAlign: "center" }}>
           <Typography
             id={id}
-            sx={{ fontWeight: 700, fontSize: "3rem", paddingTop: 10 }}
+            variant={"h4"}
+            sx={{ fontWeight: 700, paddingTop: 10 }}
           >
             {title}
           </Typography>
