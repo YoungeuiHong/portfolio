@@ -16,4 +16,8 @@ export const MENUS: Menu[] = [
     id: "projects",
     title: "프로젝트",
   },
+  {
+    id: "activity",
+    title: "교육 및 대외활동",
+  },
 ];

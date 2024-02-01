@@ -1,5 +1,5 @@
 import { CareerDescription, Description } from "@/types/Description";
-import DescriptionCard from "@/components/card/DescriptionCard";
+import DescriptionCard from "@/components/card/view/DescriptionCard";
 import ChipList from "@/components/chip/ChipList";
 
 interface CareerCardProps {

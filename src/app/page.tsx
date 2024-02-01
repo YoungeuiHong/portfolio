@@ -3,6 +3,7 @@ import Career from "@/sections/career";
 import Project from "@/sections/project";
 import TechStack from "@/sections/tech-stack";
 import Footer from "@/sections/footer";
+import Activity from "@/sections/activity";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <TechStack />
       <Career />
       <Project />
+      <Activity />
       <Footer />
     </main>
   );

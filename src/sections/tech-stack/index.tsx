@@ -10,7 +10,11 @@ import {
 
 export default function TechStack() {
   return (
-    <SectionLayout id={"tech-stack"} title={"기술 스택"}>
+    <SectionLayout
+      id={"tech-stack"}
+      title={"기술 스택"}
+      stackSx={{ backgroundColor: "#FAFAFA" }}
+    >
       <Stack direction={"row"}>
         {FRONTEND_TECH_STACK.map((tech, index) => (
           <TooltipImageIcon

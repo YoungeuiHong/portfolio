@@ -23,7 +23,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const router = useRouter();
 
   return (
-    <Card sx={{ mt: 1 }}>
+    <Card
+      sx={{
+        mt: 1,
+        boxShadow: "4px 12px 40px 6px rgba(0,0,0,.09)",
+        borderRadius: 3,
+      }}
+    >
       <Link href={`/project/${project.id}`} style={{ textDecoration: "none" }}>
         <CardMedia
           sx={{
