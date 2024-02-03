@@ -1,39 +1,18 @@
-import { TimelineInfo } from "@/types/Timeline";
+export interface CareerInfo {
+  companyName: string;
+  companyLogo: string;
+  duration: string;
+  description: string;
+  mdFilePath: string;
+}
 
-export const TIMELINES: TimelineInfo[] = [
+export const CAREERS: CareerInfo[] = [
   {
-    time: "2021.09 - 2023.07",
-    name: "넥스트리",
-    main: true,
-    icon: "/assets/icon/nextree.png",
-    mainDescription: {
-      date: "2021.09.13 - 2022.07.31 (1년 11개월)",
-      content: "프론트엔드 및 백엔드 개발",
-      techStack: ["React", "TypeScript", "Jotai", "Java", "Spring", "MongoDB"],
-    },
-  },
-  {
-    time: "2023.05 - 2023-07",
-    name: "서울아산병원 MSA 선도 사업",
-  },
-  {
-    time: "2022.11 - 2023.05",
-    name: "삼성엔지니어링 EDP 구축 프로젝트",
-  },
-  {
-    time: "2022.03 - 2022.11",
-    name: "삼성엔지니어링 VCS 구축 프로젝트",
-  },
-  {
-    time: "2022.01 - 2022.03",
-    name: "사내 그룹웨어 서비스 구축 프로젝트",
-  },
-  {
-    time: "2021.11 - 2021.12",
-    name: "코딩 교육 플랫폼 나무소리 교육 컨텐츠 제작",
-  },
-  {
-    time: "2021.09 - 2021.11",
-    name: "GS 홈쇼핑 기간계 방송 시스템 MSA 전환 프로젝트",
+    companyName: "넥스트리",
+    companyLogo: "/assets/icon/nextree.png",
+    duration: "2021.09.13 - 2023.07.31",
+    description:
+      "MSA 기반 SI 업체에서 프론트엔드, 백엔드 개발에서부터 CI/CD, MSA 전환까지 다양한 업무를 수행했습니다. 높은 인사 평가 점수를 받아서 우수 선임 엔지니어상을 수상한 경험이 있습니다.",
+    mdFilePath: "/assets/markdown/nextree.md",
   },
 ];

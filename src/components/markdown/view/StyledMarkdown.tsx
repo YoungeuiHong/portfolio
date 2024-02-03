@@ -3,6 +3,12 @@ import { alpha } from "@mui/material/styles";
 
 const StyledMarkdown = styled("div")(({ theme }) => {
   return {
+    "h1, h2, h3": {
+      marginTop: 30,
+    },
+    h3: {
+      fontSize: 20,
+    },
     br: {
       display: "grid",
       content: '""',
@@ -24,6 +30,7 @@ const StyledMarkdown = styled("div")(({ theme }) => {
     // List
     "& ul, & ol": {
       margin: 0,
+      paddingInlineStart: 25,
       "& li": {
         lineHeight: 2,
       },
@@ -31,16 +38,18 @@ const StyledMarkdown = styled("div")(({ theme }) => {
 
     // Blockquote
     "& blockquote": {
-      margin: "0 auto",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginY: 1,
       position: "relative",
-      padding: theme.spacing(1, 1, 3, 3),
+      padding: 1,
       color: theme.palette.text.primary,
       borderRadius: theme.shape.borderRadius * 2,
-      backgroundColor: alpha(theme.palette.grey[500], 0.12),
+      backgroundColor: theme.palette.grey[200],
       width: "100%",
       [theme.breakpoints.up("md")]: {},
       "& p, & span": {
-        marginBottom: 0,
+        padding: "0px 10px",
       },
     },
 
@@ -50,6 +59,7 @@ const StyledMarkdown = styled("div")(({ theme }) => {
       borderRadius: 2,
     },
     "& pre, & pre > code": {
+      fontFamily: theme.typography.fontFamily,
       overflowX: "auto",
       whiteSpace: "pre",
       color: theme.palette.common.black,
@@ -57,10 +67,11 @@ const StyledMarkdown = styled("div")(({ theme }) => {
       backgroundColor: theme.palette.grey[50],
     },
     "& code": {
-      fontSize: 14,
+      fontFamily: theme.typography.fontFamily,
+      fontSize: 15,
+      color: theme.palette.primary.main,
       borderRadius: 4,
       whiteSpace: "pre",
-      color: theme.palette.common.black,
       padding: "3px 5px",
       backgroundColor: theme.palette.grey["A200"],
       "&.hljs": { padding: 0, backgroundColor: "transparent" },
@@ -114,6 +125,13 @@ const StyledMarkdown = styled("div")(({ theme }) => {
           },
         },
       },
+    },
+    a: {
+      textDecoration: "none",
+      color: theme.palette.primary.main,
+    },
+    "a:hover": {
+      textDecoration: "underline",
     },
   };
 });

@@ -1,11 +1,14 @@
-import CustomTimeline from "@/components/timeline";
-import { TIMELINES } from "@/data/career";
+"use client";
 import SectionLayout from "@/sections/layout";
+import CareerBox from "@/sections/career/view/CareerBox";
+import { CAREERS } from "@/data/career";
 
 export default function Career() {
   return (
     <SectionLayout id={"career"} title={"경력"}>
-      <CustomTimeline timelines={TIMELINES} />
+      {CAREERS.map((career) => (
+        <CareerBox key={`career-${career.companyName}`} career={career} />
+      ))}
     </SectionLayout>
   );
 }
