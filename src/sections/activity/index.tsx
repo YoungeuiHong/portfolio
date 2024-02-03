@@ -8,7 +8,13 @@ export default function Activity() {
     <SectionLayout id={"activity"} title={"교육 및 대외활동"}>
       <Grid container maxWidth={"lg"} spacing={2}>
         {ACTIVITIES.map((activity) => (
-          <Grid key={`activity-grid-${activity.title}`} item sm={6} md={4}>
+          <Grid
+            key={`activity-grid-${activity.title}`}
+            item
+            xs={12}
+            md={6}
+            lg={4}
+          >
             <ActivityCard
               key={`activity-card-${activity.title}`}
               activity={activity}

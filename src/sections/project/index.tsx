@@ -13,7 +13,7 @@ export default function Projects() {
     >
       <Grid container maxWidth={"lg"} spacing={3}>
         {PROJECTS.map((project, index) => (
-          <Grid key={index} item xs={12} sm={6} md={4}>
+          <Grid key={index} item xs={12} md={6} lg={4}>
             <ProjectCard project={project} />
           </Grid>
         ))}

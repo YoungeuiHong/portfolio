@@ -16,9 +16,9 @@ export const PROJECTS: Project[] = [
     id: "1",
     title: "돌돌밋",
     thumbnail: "/assets/image/project/thumbnail/doldolmeet.png",
-    techStack: ["Next.js", "TypeScript", "React Query", "Jotai"],
+    techStack: ["Next.js", "TypeScript", "React Query", "OpenVidu"],
     description:
-      "비대면 팬미팅, 즉 영통 팬싸를 쉽고 편하게 즐길 수 있도록 영상통화 및 대기열 관리 기능을 구현한 사이트입니다.",
+      "비대면 팬미팅을 쉽고 편하게 즐길 수 있도록 영상통화 및 대기열 관리 기능을 구현한 사이트입니다.",
     links: [
       {
         icon: "description",
@@ -76,7 +76,7 @@ export const PROJECTS: Project[] = [
     id: "3",
     title: "엑셀 Export / Import 모듈",
     thumbnail: "/assets/image/project/thumbnail/excel.png",
-    techStack: ["React", "Java", "Apache POI"],
+    techStack: ["Java", "Apache POI", "React"],
     description:
       "엑셀 Export / Import 기능을 쉽게 구현할 수 있도록 개발한 모듈입니다.",
     links: [
@@ -93,6 +93,6 @@ export const PROJECTS: Project[] = [
       },
     ],
     detailTitle: "엑셀 Export / Import 모듈",
-    mdFilePath: "/assets/markdown/doldolmeet.md",
+    mdFilePath: "/assets/markdown/excel.md",
   },
 ];

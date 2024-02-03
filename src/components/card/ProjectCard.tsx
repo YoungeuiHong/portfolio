@@ -33,7 +33,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <Link href={`/project/${project.id}`} style={{ textDecoration: "none" }}>
         <CardMedia
           sx={{
-            height: 200,
+            height: 230,
             "&:hover": {
               overflow: "hidden",
               transform: "scale(1.02)",
@@ -43,26 +43,38 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           title={title}
         />
       </Link>
-      <CardContent>
+      <CardContent
+        sx={{
+          backgroundColor: (theme) => theme.palette.grey["100"],
+        }}
+      >
         <Link
           href={`/project/${project.id}`}
-          style={{ textDecoration: "none", color: "#000000" }}
+          style={{
+            textDecoration: "none",
+            color: "#212B36",
+          }}
         >
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="div"
-            sx={{ fontWeight: 500 }}
-          >
+          <Typography sx={{ fontWeight: 700, fontSize: 20 }}>
             {title}
           </Typography>
         </Link>
-        <ChipList chips={techStack} stackSx={{ mb: 2 }} />
-        <Typography variant="body2" color="text.secondary" sx={{ height: 30 }}>
+        <ChipList
+          chips={techStack}
+          stackSx={{ my: 1 }}
+          chipSx={{ backgroundColor: (theme) => theme.palette.grey["300"] }}
+        />
+        <Typography
+          variant="body1"
+          color="text.secondary"
+          sx={{ height: 35, pt: "1px" }}
+        >
           {description}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions
+        sx={{ backgroundColor: (theme) => theme.palette.grey["100"] }}
+      >
         <Stack direction={"row"}>
           {links &&
             links.map((link, index) => (
