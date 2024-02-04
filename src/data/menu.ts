@@ -20,4 +20,8 @@ export const MENUS: Menu[] = [
     id: "activity",
     title: "교육 및 대외활동",
   },
+  {
+    id: "certificate",
+    title: "자격증 및 수상",
+  },
 ];
