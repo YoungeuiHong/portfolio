@@ -6,7 +6,7 @@ import { ACTIVITIES } from "@/data/activity";
 export default function Activity() {
   return (
     <SectionLayout id={"activity"} title={"교육 및 대외활동"}>
-      <Grid container maxWidth={"lg"} spacing={2}>
+      <Grid container maxWidth={"lg"} spacing={3}>
         {ACTIVITIES.map((activity) => (
           <Grid
             key={`activity-grid-${activity.title}`}

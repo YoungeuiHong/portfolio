@@ -5,7 +5,7 @@ import { SxProps } from "@mui/system";
 interface FillCoverImageProps {
   src: string;
   alt: string;
-  sx: SxProps<Theme>;
+  sx?: SxProps<Theme>;
 }
 
 export default function FillCoverImage({ src, alt, sx }: FillCoverImageProps) {
