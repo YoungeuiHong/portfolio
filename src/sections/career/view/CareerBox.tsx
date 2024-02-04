@@ -8,8 +8,14 @@ interface CareerBoxProps {
 }
 
 export default function CareerBox({ career }: CareerBoxProps) {
-  const { companyName, companyLogo, duration, description, mdFilePath } =
-    career;
+  const {
+    companyName,
+    companyLogo,
+    duration,
+    description,
+    mdFilePath,
+    techStack,
+  } = career;
 
   return (
     <Grid container maxWidth={"md"} sx={{ pt: 2 }}>
@@ -36,7 +42,11 @@ export default function CareerBox({ career }: CareerBoxProps) {
           paddingLeft: 3,
         }}
       >
-        <CareerDescription description={description} mdFilePath={mdFilePath} />
+        <CareerDescription
+          description={description}
+          mdFilePath={mdFilePath}
+          techStack={techStack}
+        />
       </Grid>
     </Grid>
   );
