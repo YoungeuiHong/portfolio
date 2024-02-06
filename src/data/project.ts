@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
       {
         icon: "play_circle",
         tooltip: "데모",
-        href: "https://www.about-youngeui.net",
+        href: "https://www.about-youngeui.site",
       },
     ],
     detailTitle: "포트폴리오",

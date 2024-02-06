@@ -35,7 +35,7 @@ export default function Header() {
         }}
       >
         <Toolbar sx={{ display: "flex", justifyContent: "center" }}>
-          <TextLogo logoText={"about-youngeui.net"} />
+          <TextLogo logoText={"about-youngeui.site"} />
           <Box sx={{ flexGrow: 1 }}></Box>
           <MenuBar />
         </Toolbar>
