@@ -6,6 +6,12 @@ const StyledMarkdown = styled("div")(({ theme }) => {
     "h1, h2, h3": {
       marginTop: 30,
     },
+    h1: {
+      fontSize: 28,
+    },
+    h2: {
+      fontSize: 24,
+    },
     h3: {
       fontSize: 20,
     },
@@ -55,10 +61,10 @@ const StyledMarkdown = styled("div")(({ theme }) => {
 
     // Code Block
     "& pre": {
-      padding: 10,
+      padding: "0px 10px",
       borderRadius: 2,
     },
-    "& pre, & pre > code": {
+    "& pre, & pre code": {
       fontFamily: theme.typography.fontFamily,
       overflowX: "auto",
       whiteSpace: "pre",
@@ -75,6 +81,9 @@ const StyledMarkdown = styled("div")(({ theme }) => {
       padding: "3px 5px",
       backgroundColor: theme.palette.grey["A200"],
       "&.hljs": { padding: 0, backgroundColor: "transparent" },
+    },
+    "& pre code": {
+      padding: 0,
     },
 
     // Table

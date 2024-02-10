@@ -91,6 +91,11 @@ export const PROJECTS: Project[] = [
         tooltip: "GitHub",
         href: "https://github.com/YoungeuiHong/excel-util",
       },
+      {
+        icon: "play_circle",
+        tooltip: "데모",
+        href: "https://youngeuihong.gitbook.io/excel-export-import-util/",
+      },
     ],
     detailTitle: "엑셀 Export / Import 모듈",
     mdFilePath: "/assets/markdown/excel.md",
