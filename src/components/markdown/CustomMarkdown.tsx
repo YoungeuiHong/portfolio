@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import StyledMarkdown from "@/components/markdown/view/StyledMarkdown";
+import rehypeRaw from "rehype-raw";
 
 interface CustomMarkdownProps {
   mdFilePath: string;
@@ -69,7 +70,9 @@ export default function CustomMarkdown({ mdFilePath }: CustomMarkdownProps) {
 
   return (
     <StyledMarkdown>
-      <ReactMarkdown components={components}>{markdown}</ReactMarkdown>
+      <ReactMarkdown components={components} rehypePlugins={[rehypeRaw]}>
+        {markdown}
+      </ReactMarkdown>
     </StyledMarkdown>
   );
 }
