@@ -7,7 +7,7 @@ import MenuBar from "./view/MenuBar";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const [showHeader, setShowHeader] = useState(true);
+  const [showHeader, setShowHeader] = useState(false);
   const pathname = usePathname();
 
   const handleScroll = () => {
@@ -19,6 +19,10 @@ export default function Header() {
   };
 
   useEffect(() => {
+    if (pathname !== "/") {
+      setShowHeader(true);
+    }
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
