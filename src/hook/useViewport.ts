@@ -1,7 +1,7 @@
-import { cookies } from "next/headers";
+import { headers } from "next/headers";
 
 export const useViewport = () => {
-  const viewport = cookies().get("viewport")?.value;
+  const viewport = headers().get("viewport");
 
   return {
     isMobile: viewport === "mobile",
