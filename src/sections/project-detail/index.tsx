@@ -17,14 +17,15 @@ interface ProjectDetailProps {
 export default function ProjectDetail({ project }: ProjectDetailProps) {
   const { detailTitle, techStack, links, mdFilePath } = project;
   const mdUp = useMediaQuery((theme: Theme) => theme.breakpoints.up("md"));
+  const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
 
   return (
     <Stack
       direction={"column"}
       spacing={3}
-      sx={{ margin: "auto", width: "60vw" }}
+      sx={{ margin: "auto", width: mdUp ? "60vw" : "80vw" }}
     >
-      <Typography variant={"h3"} fontWeight={700}>
+      <Typography variant={smDown ? "h4" : "h3"} fontWeight={700}>
         {detailTitle}
       </Typography>
       <ChipList

@@ -1,4 +1,3 @@
-"use client";
 import SectionLayout from "@/sections/layout";
 import CareerBox from "@/sections/career/view/CareerBox";
 import { CAREERS } from "@/data/career";

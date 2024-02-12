@@ -1,4 +1,5 @@
-import { Box, Stack, Typography } from "@mui/material";
+"use client";
+import { Box, Stack, Theme, Typography, useMediaQuery } from "@mui/material";
 import CustomMarkdown from "@/components/markdown/CustomMarkdown";
 import AvatarChip from "@/components/chip/AvatarChip";
 import { NameValue } from "@/types/NameValue";
@@ -14,8 +15,10 @@ export default function CareerDescription({
   mdFilePath,
   techStack,
 }: CareerDescriptionProps) {
+  const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
+
   return (
-    <>
+    <Box sx={{ ml: smDown ? 0 : 3 }}>
       <Box
         sx={{
           width: "100%",
@@ -47,6 +50,6 @@ export default function CareerDescription({
       <Box sx={{ paddingLeft: 1 }}>
         <CustomMarkdown mdFilePath={mdFilePath} />
       </Box>
-    </>
+    </Box>
   );
 }

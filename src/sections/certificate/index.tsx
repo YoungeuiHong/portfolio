@@ -10,7 +10,12 @@ export default function Certificate() {
       title={"자격증 및 수상"}
       stackSx={{ backgroundColor: "#FAFAFA" }}
     >
-      <Grid container maxWidth={"lg"} spacing={3}>
+      <Grid
+        container
+        maxWidth={"lg"}
+        spacing={{ xs: 0, sm: 3 }}
+        direction={{ xs: "column", sm: "row" }}
+      >
         {CERTIFICATES.map((certificate) => (
           <Grid
             key={`certificate-${certificate.name}`}

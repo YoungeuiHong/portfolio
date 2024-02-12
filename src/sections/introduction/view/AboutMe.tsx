@@ -1,9 +1,19 @@
+"use client";
 import { Stack, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 
-export default function AboutMe() {
+interface Props {
+  isMobile: boolean;
+}
+
+export default function AboutMe({ isMobile }: Props) {
   return (
-    <Stack component={"div"} direction={"column"} sx={{ width: 400 }}>
+    <Stack
+      component={"div"}
+      direction={"column"}
+      sx={{ width: isMobile ? "90vw" : 400 }}
+      alignItems={isMobile ? "center" : "flex-start"}
+    >
       <Typography sx={{ fontSize: "2em" }}>안녕하세요! 👋🏻</Typography>
       <div style={{ display: "flex" }}>
         <TypeAnimation

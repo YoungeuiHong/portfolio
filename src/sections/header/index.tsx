@@ -1,5 +1,5 @@
 "use client";
-import { AppBar, Box, Toolbar } from "@mui/material";
+import { AppBar, Box, Theme, Toolbar, useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 import ScrollProgressBar from "@/components/scroll/ScrollProgressBar";
 import TextLogo from "@/sections/header/view/TextLogo";
@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(false);
+  const mdUp = useMediaQuery((theme: Theme) => theme.breakpoints.up("md"));
   const pathname = usePathname();
 
   const handleScroll = () => {
@@ -41,7 +42,7 @@ export default function Header() {
         <Toolbar sx={{ display: "flex", justifyContent: "center" }}>
           <TextLogo logoText={"about-youngeui.site"} />
           <Box sx={{ flexGrow: 1 }}></Box>
-          <MenuBar />
+          {mdUp && <MenuBar />}
         </Toolbar>
         <ScrollProgressBar />
       </AppBar>

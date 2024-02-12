@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "@/sections/header";
-import MuiThemeProvider from "@/theme";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import theme from "@/theme";
 
 export const metadata: Metadata = {
   title: "개발자 홍영의",
@@ -42,10 +43,11 @@ export default function RootLayout({
         />
       </head>
       <body className={pretendard.className}>
-        <MuiThemeProvider>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
           <Header />
           {children}
-        </MuiThemeProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

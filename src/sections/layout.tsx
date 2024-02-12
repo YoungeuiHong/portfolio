@@ -21,6 +21,7 @@ export default function SectionLayout({
       <Stack
         alignItems={"center"}
         sx={{
+          px: 1,
           py: 10,
           width: "100%",
           ...stackSx,

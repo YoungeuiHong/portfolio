@@ -14,6 +14,7 @@ export default function ActivityCard({ activity }: ActivityCardProps) {
 
   return (
     <CardWithImage
+      cardSx={{ mt: 1 }}
       content={
         <Stack
           sx={{

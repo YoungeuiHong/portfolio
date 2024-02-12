@@ -1,12 +1,13 @@
 "use client";
 import { TooltipImageIcon } from "@/components/icon";
-import { Stack, Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import SectionLayout from "../layout";
 import {
   BACKEND_TECH_STACK,
   DEVOPS_TECH_STACK,
   FRONTEND_TECH_STACK,
 } from "@/data/tech";
+import _ from "lodash";
 
 export default function TechStack() {
   return (
@@ -15,37 +16,30 @@ export default function TechStack() {
       title={"기술 스택"}
       stackSx={{ backgroundColor: "#FAFAFA" }}
     >
-      <Stack direction={"row"}>
-        {FRONTEND_TECH_STACK.map((tech, index) => (
-          <TooltipImageIcon
+      <Grid container sx={{ maxWidth: 600 }}>
+        {_.concat(
+          FRONTEND_TECH_STACK,
+          BACKEND_TECH_STACK,
+          DEVOPS_TECH_STACK,
+        ).map((tech, index) => (
+          <Grid
             key={`tootip-image-icon-${tech.name}`}
-            src={tech.icon}
-            tooltip={tech.name}
-            width={100}
-            height={100}
-          />
+            item
+            xs={3}
+            sm={2}
+            sx={{ display: "flex" }}
+          >
+            <Box sx={{ margin: "auto" }}>
+              <TooltipImageIcon
+                src={tech.icon}
+                tooltip={tech.name}
+                width={100}
+                height={100}
+              />
+            </Box>
+          </Grid>
         ))}
-      </Stack>
-      <Stack direction={"row"}>
-        {BACKEND_TECH_STACK.map((tech, index) => (
-          <TooltipImageIcon
-            key={`tootip-image-icon-${tech.name}`}
-            src={tech.icon}
-            tooltip={tech.name}
-            width={100}
-            height={100}
-          />
-        ))}
-        {DEVOPS_TECH_STACK.map((tech, index) => (
-          <TooltipImageIcon
-            key={`tootip-image-icon-${tech.name}`}
-            src={tech.icon}
-            tooltip={tech.name}
-            width={100}
-            height={100}
-          />
-        ))}
-      </Stack>
+      </Grid>
     </SectionLayout>
   );
 }

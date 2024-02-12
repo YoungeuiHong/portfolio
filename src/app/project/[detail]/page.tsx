@@ -18,12 +18,10 @@ export default function ProjectDetailPage({
   }, []);
 
   return (
-    <>
-      <Grid container sx={{ marginTop: 18 }}>
-        <Grid item xs={12}>
-          {project && <ProjectDetail project={project} />}
-        </Grid>
+    <Grid container sx={{ my: 18 }}>
+      <Grid item xs={12}>
+        {project && <ProjectDetail project={project} />}
       </Grid>
-    </>
+    </Grid>
   );
 }

@@ -11,7 +11,12 @@ export default function Projects() {
       title={"프로젝트"}
       stackSx={{ backgroundColor: "#FAFAFA" }}
     >
-      <Grid container maxWidth={"lg"} spacing={3}>
+      <Grid
+        container
+        maxWidth={"lg"}
+        spacing={{ xs: 0, sm: 3 }}
+        direction={{ xs: "column", sm: "row" }}
+      >
         {PROJECTS.map((project, index) => (
           <Grid key={index} item xs={12} md={6} lg={4}>
             <ProjectCard project={project} />

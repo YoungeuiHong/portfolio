@@ -5,7 +5,7 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        mt: 2,
+        mt: 5,
         py: 5,
         textAlign: "center",
         position: "relative",

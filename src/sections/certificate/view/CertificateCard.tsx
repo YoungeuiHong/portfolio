@@ -15,6 +15,7 @@ export default function CertificateCard({
     <Stack
       direction={"row"}
       sx={{
+        mt: 1,
         justifyContent: "space-between",
         height: 150,
         borderRadius: 3,
