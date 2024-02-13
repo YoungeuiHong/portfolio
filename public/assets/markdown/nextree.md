@@ -14,7 +14,7 @@
 * __TypeScript 타입 정의__
   * VCS 통합 테스트 과정에서 타입이 `any`로 되어 있는 부분에서 많은 에러가 발생함을 발견하고, 해당 코드들을 수정하는 작업 진행
   * 복잡한 구조의 데이터는 TypeScript의 Utility Type을 활용하여 타입을 정의함 
-  * 해당 경험을 바탕으로 작성한 ["TypeScript 알차게 활용하기"](https://www.nextree.io/typescript-hwalyong-bangbeob/) 글을 사내 기술 블로그에 게시함
+  * 해당 경험을 바탕으로 작성한 <a href="https://www.nextree.io/typescript-hwalyong-bangbeob/" target="_blank">'TypeScript 알차게 활용하기'</a>글을 사내 기술 블로그에 게시함
 * __프론트엔드 v4 개편 TF 참여__
   * 프로젝트 현장에 Mono Repo 구조와 `React Query`를 적용하고, 상태 관련 라이브러리를 `MobX`에서 `Jotai`로 변경함
 
@@ -27,4 +27,4 @@
   * 에러 발생 시 망가진 화면 대신 fallback UI가 보일 수 있도록 `<ErrorBoundary />`를 적용하여 사용자 경험을 개선함
 * __코드 변경 사항 추적 기능 개발__
   * 변경된 코드의 정적 분석을 위해 코드 변경 사항을 추적하는 기능을 `JGit`을 사용하여 구현함
-  * 이 기능을 구현하면서 경험한 에러를 바탕으로 사내 기술 블로그에 ["메모리 누수의 개념과 방지 방법"](https://www.nextree.io/memory-leak/) 글을 게시함
+  * 이 기능을 구현하면서 경험한 에러를 바탕으로 사내 기술 블로그에 <a href="https://www.nextree.io/memory-leak/" target="_blank">'메모리 누수의 개념과 방지 방법'</a> 글을 게시함
