@@ -27,38 +27,40 @@ export default function ActivityCard({ activity }: ActivityCardProps) {
           spacing={1}
           justifyContent={href ? "space-between" : "flex-start"}
         >
-          <Box
-            sx={{
-              boxSizing: "border-box",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <Chip
-              label={chip}
-              size={"medium"}
+          <Stack component={"div"} spacing={1}>
+            <Box
               sx={{
-                backgroundColor: (theme) => theme.palette.common.white,
-                borderRadius: 2,
+                boxSizing: "border-box",
+                display: "flex",
+                alignItems: "center",
               }}
-            />
-            <Typography variant={"body2"} sx={{ ml: 2 }}>
-              {date}
-            </Typography>
-          </Box>
-          <Stack component={"div"} spacing={1} sx={{ px: 1 }}>
-            <Typography sx={{ fontWeight: 700, fontSize: 20 }}>
-              {title}
-            </Typography>
-            <Typography variant={"body1"}>{content}</Typography>
-            {organizer && (
-              <Typography
-                variant={"body2"}
-                sx={{ color: (theme) => theme.palette.grey["600"] }}
-              >
-                주관: {organizer}
+            >
+              <Chip
+                label={chip}
+                size={"medium"}
+                sx={{
+                  backgroundColor: (theme) => theme.palette.common.white,
+                  borderRadius: 2,
+                }}
+              />
+              <Typography variant={"body2"} sx={{ ml: 2 }}>
+                {date}
               </Typography>
-            )}
+            </Box>
+            <Box sx={{ px: 1 }}>
+              <Typography sx={{ fontWeight: 700, fontSize: 20 }}>
+                {title}
+              </Typography>
+              <Typography variant={"body1"}>{content}</Typography>
+              {organizer && (
+                <Typography
+                  variant={"body2"}
+                  sx={{ color: (theme) => theme.palette.grey["600"] }}
+                >
+                  주관: {organizer}
+                </Typography>
+              )}
+            </Box>
           </Stack>
           {href && (
             <LinkWithIcon

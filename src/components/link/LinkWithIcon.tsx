@@ -1,5 +1,4 @@
-import { Typography } from "@mui/material";
-import Link from "next/link";
+import { Box, Typography } from "@mui/material";
 import { ReactNode } from "react";
 
 interface LinkWithIconProps {
@@ -10,14 +9,16 @@ interface LinkWithIconProps {
 
 export default function LinkWithIcon({ href, text, icon }: LinkWithIconProps) {
   return (
-    <Link
-      href={href}
-      style={{
-        textDecoration: "none",
+    <Box
+      sx={{
         marginLeft: "auto",
         marginTop: "auto",
         display: "flex",
+        justifyContent: "flex-end",
+        px: 1,
+        "&:hover": { cursor: "pointer" },
       }}
+      onClick={() => window.open(href)}
     >
       <Typography
         variant={"body1"}
@@ -29,6 +30,6 @@ export default function LinkWithIcon({ href, text, icon }: LinkWithIconProps) {
         {text}
       </Typography>
       {icon}
-    </Link>
+    </Box>
   );
 }
