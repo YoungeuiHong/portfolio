@@ -1,20 +1,22 @@
-
 # 1. 개요
 > 💡 영통 팬싸를 쉽고 편하게 즐길 수 있도록 영상통화 및 대기열 관리 기능을 구현한 사이트입니다.
 
-### 1) 내용
-* SW사관학교 7기 프로젝트 (팀원: 6명)
-* 기간: 2023.11.08 - 2023.12.16 (5주)
+* __`who`__ : 백엔드 3명, 프론트엔드 3명 (SW사관학교 7기)
+* __`when`__ : 2023.11.08 - 2023.12.16 (5주)
 
-### 2) 담당 역할
-* FE 개발, BE 개발, 기획, UX/UI 디자인
+### 🙋🏻‍♀️ 내가 맡은 역할
+* FE 개발, BE 개발, UI/UX 디자인
 * 대기열, 영상통화, 채팅, 모션 인식 캡쳐 기능 구현
 
-
+### 👀 무엇을 배웠나요?
+* Next.js를 사용한 서버 사이드 렌더링 구현
+* WebRTC를 사용한 영상통화 기능 구현
+* 웹 소켓과 SSE를 사용한 서버-클라이언트 통신 구현
 
 # 2. 시연 영상
-[![](/assets/markdown/embed/doldolmeet/돌돌밋_시연영상_유튜브_썸네일.png)](https://youtu.be/6jjJcgHJBaM)
-
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/6jjJcgHJBaM?si=uVEB03HBzHf3PTcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 # 3. 기획의도
 
@@ -32,57 +34,35 @@
 * 대기열 관리 시스템을 도입하여 일일이 통화시간을 재면서 전화를 걸고 끊을 필요가 없도록 하자
 * 녹화 / 메모장 / 번역 기능 등을 도입하여 팬들이 좀더 편안하고 즐겁게 팬미팅을 즐길 수 있도록 하자
 
-![팬미팅_현장](/assets/markdown/embed/doldolmeet/팬미팅_현장.png)
-
 # 4. 아키텍처
 
 ![아키텍처](/assets/markdown/embed/doldolmeet/아키텍처.png)
 
-# 5. 주요 기능
+# 5. 기술적 챌린지
 
-### 1) 메인 대기실
+## 1️⃣ 대기열 기능 구현하기
 
-* 나의 현재 대기 순서를 확인할 수 있고, 뮤직 비디오 감상이 가능합니다.
+### __`목표`__ 
+* 현재 팬과의 팬미팅이 종료되면 다음 순서의 팬을 영상통화방으로 자동 입장시키기
+* 정해진 팬미팅 시간이 지나면 자동으로 영상통화가 종료되고, 다음 아이돌 멤버와의 영상통화 대기실로 이동시키기
 
-* 메모장에 하고 싶은 말을 미리 작성할 수 있고, 다른 팬들과의 채팅도 가능합니다.
+### __`문제 해결 과정`__
+* 처음에는 팬이 입장하고 퇴장할 때마다 API를 호출해 대기열을 관리하려고 했으나, API를 빈번히 호출해야 하고 로직이 복잡해지는 문제가 있었음   
+* 이를 개선하기 위해 OpenVidu의 Webhook과 Server-Sent Events(SSE)를 활용하여 대기열 관리 기능을 구현함
+  * 서버에서 정해진 통화 시간이 종료되면 영상통화 연결을 끊음
+  * 👉🏻 Webhook 엔드포인트 URL로 `participantLeft` 이벤트가 도착함
+  * 👉🏻 현재 팬을 다음 아이돌의 대기열로 이동시키고, 다음으로 통화할 팬에게 `moveToIdolRoom` 이벤트를 보냄
+  * 👉🏻 클라이언트에서 `moveToIdolRoom` Server-Sent Events를 받으면 영상통화를 연결함
+* 클라이언트가 서버가 보낸 이벤트를 받지 못해서 다음 영상통화방으로 넘어가지 못하는 문제가 간헐적으로 발생함
+  * 원인은 HTTP/1.1에서 최대로 맺을 수 있는 SSE 연결의 개수가 6개이기 때문이었음
+  * HTTP/2로 버전을 변경하고, 페이지를 벗어날 때에는 `EventSource`를 닫아주도록 관리함
 
-![메인대기실](/assets/markdown/embed/doldolmeet/메인대기실.gif)
+## 2️⃣ 모션 인식 캡쳐 기능 구현하기
 
-### 2) 멤버별 영상통화 대기실
+### __`목표`__ 
+* 아이돌과 팬이 정해진 포즈를 취하면 자동으로 사진을 촬영하기
 
-* 입장 순서가 다가오면 메인 대기실에서 아이돌 멤버별 영상통화 대기실로 이동합니다.
-
-* 내 앞 순서 팬의 통화가 끝나면 일대일 영상통화방에 입장하게 됩니다.
-
-![멤버별_영상통화_대기실](/assets/markdown/embed/doldolmeet/멤버별_영상통화_대기실.gif)
-
-### 3) 일대일 영상통화방
-* 일대일 영상통화방 상단에는 현재 남은 시간이 표시됩니다.
-* 상단의 버튼을 통해 마이크 / 카메라 / 자막 / 전체화면 모드를 키고 끌 수 있습니다.
-* 좌측에는 채팅창과 메모장이 표시됩니다.
-
-![일대일_영상통화방](/assets/markdown/embed/doldolmeet/영상통화방_메모장_채팅.gif)
-
-### 3-1) 일대일 영상통화방 - 채팅 / 음성 번역
-* 외국인 팬들을 위해 채팅 번역 기능과 음성 인식 번역 기능을 제공합니다.
-
-![채팅_번역](/assets/markdown/embed/doldolmeet/영상통화방_채팅_번역.gif)
-![음성_인식_번역](/assets/markdown/embed/doldolmeet/영상통화방_음성_번역.gif)
-
-### 3-2) 일대일 영상통화방 - 모션 인식 캡쳐
-* 통화시간이 10초 남으면 종료 임박 및 포토타임 알림이 뜹니다.
-* 아이돌과 팬 모두 제시된 포즈를 취하면 자동으로 사진이 촬영됩니다.
-
-![모션인식캡쳐](/assets/markdown/embed/doldolmeet/영상통화방_모션인식캡쳐.gif)
-
-### 4) 단체 게임
-
-* 모든 아이돌 멤버와의 영상통화가 끝나면 단체 게임 페이지로 이동합니다.
-
-![단체게임](/assets/markdown/embed/doldolmeet/단체게임.gif)
-
-### 5) 종료 페이지
-* 모든 팬미팅 일정이 종료되면 종료 페이지로 이동합니다.
-* 촬영된 사진과 녹화된 영상을 다운로드하거나 SNS에 공유할 수 있습니다.
-
-![종료페이지](/assets/markdown/embed/doldolmeet/종료페이지.gif)
+### __`문제 해결 과정`__
+* Teachable Machine으로 학습시킨 포즈 모델을 로드하고, 이 모델에 웹캠의 비디오 프레임을 가져와서 분석하는 함수 구현
+* 위 함수를 `window.requestAnimationFrame()`으로 호출하여 포즈가 취해졌는지 여부를 주기적으로 파악함
+* 아이돌과 팬이 모두 포즈를 취하면 `CanvasRenderingContext2D.drawImage()`로 웹캠 이미지를 캡쳐함
