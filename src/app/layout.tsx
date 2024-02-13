@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "@/sections/header";
+import Footer from "@/sections/footer";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/theme";
 
@@ -47,6 +48,7 @@ export default function RootLayout({
           <CssBaseline />
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
