@@ -3,10 +3,11 @@ import styles from "./FadeInContainer.module.css";
 import { ReactNode, useEffect, useRef, useState } from "react";
 
 interface FadeInProps {
+  id: string;
   children: ReactNode;
 }
 
-const FadeInContainer: React.FC<FadeInProps> = ({ children }) => {
+const FadeInContainer = ({ id, children }: FadeInProps) => {
   const [isVisible, setVisible] = useState<boolean>(false);
   const domRef = useRef<HTMLDivElement>(null);
 
@@ -25,10 +26,14 @@ const FadeInContainer: React.FC<FadeInProps> = ({ children }) => {
 
   return (
     <div
+      id={id}
       className={`${styles["fade-in-section"]} ${
         isVisible && styles["is-visible"]
       }`}
       ref={domRef}
+      style={{
+        scrollMarginBlockStart: 50,
+      }}
     >
       {children}
     </div>

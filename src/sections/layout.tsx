@@ -17,7 +17,7 @@ export default function SectionLayout({
   stackSx,
 }: SectionLayoutProps) {
   return (
-    <FadeInContainer>
+    <FadeInContainer id={id}>
       <Stack
         alignItems={"center"}
         sx={{
@@ -29,7 +29,7 @@ export default function SectionLayout({
         spacing={2}
       >
         <div style={{ textAlign: "center" }}>
-          <Typography id={id} variant={"h4"} sx={{ fontWeight: 700 }}>
+          <Typography variant={"h4"} sx={{ fontWeight: 700 }}>
             {title}
           </Typography>
         </div>
