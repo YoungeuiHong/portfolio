@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
       },
     ],
     detailTitle: "포트폴리오",
-    mdFilePath: "/assets/markdown/doldolmeet.md",
+    mdFilePath: "/assets/markdown/portfolio.md",
   },
   {
     id: "3",
