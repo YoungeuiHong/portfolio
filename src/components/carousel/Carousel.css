@@ -17,5 +17,5 @@
 .swiper-button-hidden,
 .swiper-button-lock,
 .swiper-button-disabled {
-    display: none;
+    display: none!important;
 }
