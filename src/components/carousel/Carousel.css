@@ -13,6 +13,9 @@
     align-items: center;
 }
 
+.swiper-navigation-disabled,
+.swiper-button-hidden,
+.swiper-button-lock,
 .swiper-button-disabled {
     display: none;
 }
