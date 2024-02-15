@@ -28,7 +28,7 @@ export default function SectionLayout({
         }}
         spacing={2}
       >
-        <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center", marginBottom: 10 }}>
           <Typography variant={"h4"} sx={{ fontWeight: 700 }}>
             {title}
           </Typography>

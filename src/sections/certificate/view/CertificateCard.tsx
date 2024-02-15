@@ -16,11 +16,12 @@ export default function CertificateCard({
       direction={"row"}
       sx={{
         mt: 1,
+        width: "100%",
         justifyContent: "space-between",
         height: 150,
         borderRadius: 3,
         backgroundColor: "#FFFFFF",
-        boxShadow: "4px 12px 40px 6px rgba(0,0,0,.09)",
+        boxShadow: "4px 0px 10px 0px rgba(0,0,0,.03)",
         overflow: "hidden",
       }}
     >

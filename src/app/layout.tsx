@@ -4,6 +4,8 @@ import Header from "@/sections/header";
 import Footer from "@/sections/footer";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/theme";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export const metadata: Metadata = {
   title: "개발자 홍영의",

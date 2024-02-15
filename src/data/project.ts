@@ -100,4 +100,26 @@ export const PROJECTS: Project[] = [
     detailTitle: "엑셀 Export / Import 모듈",
     mdFilePath: "/assets/markdown/excel.md",
   },
+  {
+    id: "4",
+    title: "꾸며줘 홈즈",
+    thumbnail: "/assets/image/project/thumbnail/homes.png",
+    techStack: ["Spring", "JQuery", "MyBatis"],
+    description: "인테리어 용품 쇼핑몰 사이트입니다.",
+    links: [
+      {
+        icon: "description",
+        tooltip: "상세 설명",
+        href: "/project/4",
+        internal: true,
+      },
+      {
+        icon: "play_circle",
+        tooltip: "발표자료",
+        href: "https://docs.google.com/presentation/d/1TnhlqGHAnw-OLZ4SMqtiggpxOwHqOIvG/edit?usp=drive_link&ouid=117851784509831081552&rtpof=true&sd=true",
+      },
+    ],
+    detailTitle: "꾸며줘 홈즈",
+    mdFilePath: "/assets/markdown/homes.md",
+  },
 ];

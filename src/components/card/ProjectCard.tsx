@@ -25,8 +25,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card
       sx={{
-        mt: 1,
-        boxShadow: "4px 12px 40px 6px rgba(0,0,0,.09)",
+        mt: 2,
+        width: "100%",
+        boxShadow: "4px 0px 10px 0px rgba(0,0,0,.03)",
         borderRadius: 3,
       }}
     >
@@ -45,7 +46,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </Link>
       <CardContent
         sx={{
-          backgroundColor: (theme) => theme.palette.grey["100"],
+          backgroundColor: "#FFFFFF",
         }}
       >
         <Link
@@ -72,9 +73,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {description}
         </Typography>
       </CardContent>
-      <CardActions
-        sx={{ backgroundColor: (theme) => theme.palette.grey["100"] }}
-      >
+      <CardActions sx={{ backgroundColor: "#FFFFFF" }}>
         <Stack direction={"row"}>
           {links &&
             links.map((link, index) => (
