@@ -48,7 +48,14 @@ export default function ActivityCard({ activity }: ActivityCardProps) {
               </Typography>
             </Box>
             <Box sx={{ px: 1 }}>
-              <Typography sx={{ fontWeight: 700, fontSize: 20 }}>
+              <Typography
+                sx={{
+                  fontWeight: 700,
+                  fontSize: 20,
+                  mb: 1,
+                  letterSpacing: title.length > 10 ? -0.5 : 0,
+                }}
+              >
                 {title}
               </Typography>
               <Typography variant={"body1"}>{content}</Typography>
