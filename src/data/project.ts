@@ -102,10 +102,11 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "4",
-    title: "꾸며줘 홈즈",
+    title: "꾸며줘! 홈즈",
     thumbnail: "/assets/image/project/thumbnail/homes.png",
-    techStack: ["Spring", "JQuery", "MyBatis"],
-    description: "인테리어 용품 쇼핑몰 사이트입니다.",
+    techStack: ["Spring", "HTML", "jQuery", "Python"],
+    description:
+      "인테리어 용품을 구매하고 관련 정보를 공유할 수 있는 온라인 상점 및 커뮤니티 플랫폼입니다.",
     links: [
       {
         icon: "description",
@@ -119,7 +120,7 @@ export const PROJECTS: Project[] = [
         href: "https://docs.google.com/presentation/d/1TnhlqGHAnw-OLZ4SMqtiggpxOwHqOIvG/edit?usp=drive_link&ouid=117851784509831081552&rtpof=true&sd=true",
       },
     ],
-    detailTitle: "꾸며줘 홈즈",
+    detailTitle: "꾸며줘! 홈즈",
     mdFilePath: "/assets/markdown/homes.md",
   },
 ];
