@@ -19,7 +19,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const { title, thumbnail, techStack, description, links } = project;
+  const { title, thumbnail, mainTechStack, description, links } = project;
   const router = useRouter();
 
   return (
@@ -61,7 +61,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </Typography>
         </Link>
         <ChipList
-          chips={techStack}
+          chips={mainTechStack}
           stackSx={{ my: 1 }}
           chipSx={{ backgroundColor: (theme) => theme.palette.grey["300"] }}
         />

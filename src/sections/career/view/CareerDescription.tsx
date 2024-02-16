@@ -1,8 +1,8 @@
 "use client";
-import { Box, Stack, Theme, Typography, useMediaQuery } from "@mui/material";
+import { Box, Theme, Typography, useMediaQuery } from "@mui/material";
 import CustomMarkdown from "@/components/markdown/CustomMarkdown";
-import AvatarChip from "@/components/chip/AvatarChip";
 import { NameValue } from "@/types/NameValue";
+import AvatarChipList from "@/components/chip/AvatarChipList";
 
 interface CareerDescriptionProps {
   description: string;
@@ -29,23 +29,7 @@ export default function CareerDescription({
         }}
       >
         <Typography>{description}</Typography>
-        <Stack
-          direction={"row"}
-          sx={{ mt: 2 }}
-          spacing={0.5}
-          useFlexGap
-          flexWrap="wrap"
-        >
-          {techStack.length &&
-            techStack.map((tech) => (
-              <AvatarChip
-                key={`tech-stack-chip-${tech.name}`}
-                src={tech.value}
-                alt={tech.name}
-                text={tech.name}
-              />
-            ))}
-        </Stack>
+        <AvatarChipList chips={techStack} />
       </Box>
       <Box sx={{ paddingLeft: 1 }}>
         <CustomMarkdown mdFilePath={mdFilePath} />
