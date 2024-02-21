@@ -94,7 +94,8 @@ export interface HeaderNode {
 
 # 5. 성과
 
-아래와 같은 엑셀 파일을 Export할 때 기존의 코드와 엑셀 모듈을 도입했을 때의 코드를 비교해서 살펴보자.
+엑셀 Export / Import 기능을 구현할 때 작성해야 할 코드를 최소 30-40% 가량 줄일 수 있었습니다.
+아래와 같은 엑셀 파일을 Export할 때, 기존에 작성해야 하는 코드와 엑셀 모듈을 도입했을 때의 코드를 비교하면 다음과 같습니다.
 
 ![export_sample](/assets/markdown/embed/excel/excel_sample.png)
 
