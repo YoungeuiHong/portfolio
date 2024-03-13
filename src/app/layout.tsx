@@ -49,7 +49,6 @@ export default function RootLayout({
           <CssBaseline />
           <Header />
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
