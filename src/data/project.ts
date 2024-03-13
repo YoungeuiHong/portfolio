@@ -15,6 +15,47 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    id: "5",
+    title: "위시 펀딩",
+    thumbnail: "/assets/image/project/thumbnail/wish-funding.png",
+    mainTechStack: ["Next.js", "TypeScript", "Material UI"],
+    allTechStack: [
+      {
+        name: "Next.js",
+        value: "/assets/icon/nextjs.png",
+      },
+      {
+        name: "TypeScript",
+        value: "/assets/icon/typescript.png",
+      },
+      {
+        name: "Material UI",
+        value: "/assets/icon/mui.png",
+      },
+    ],
+    description: "생일 / 결혼 선물을 위한 크라우드 펀딩 앱입니다.",
+    links: [
+      {
+        icon: "description",
+        tooltip: "상세 설명",
+        href: "/project/5",
+        internal: true,
+      },
+      {
+        icon: "github",
+        tooltip: "GitHub",
+        href: "https://github.com/coding-jjun/wishlist_funding_frontend",
+      },
+      {
+        icon: "article",
+        tooltip: "관련 포스팅",
+        href: "https://velog.io/@youngeui_hong/series/Wish-Funding",
+      },
+    ],
+    detailTitle: "위시 펀딩 (진행 중)",
+    mdFilePath: "/assets/markdown/wish-funding.md",
+  },
+  {
     id: "1",
     title: "돌돌밋",
     thumbnail: "/assets/image/project/thumbnail/doldolmeet.png",
