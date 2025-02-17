@@ -40,7 +40,7 @@ export default function Header() {
         }}
       >
         <Toolbar sx={{ display: "flex", justifyContent: "center" }}>
-          <TextLogo logoText={"about-youngeui.site"} />
+          <TextLogo logoText={"about-youngeui.com"} />
           <Box sx={{ flexGrow: 1 }}></Box>
           {mdUp && <MenuBar />}
         </Toolbar>

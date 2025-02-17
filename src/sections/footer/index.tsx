@@ -11,7 +11,7 @@ export default function Footer() {
         position: "relative",
       }}
     >
-      <Typography variant="body2">© 2024 about-youngeui.site</Typography>
+      <Typography variant="body2">© 2024 about-youngeui.com</Typography>
     </Box>
   );
 }
