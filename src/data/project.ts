@@ -17,20 +17,20 @@ export const PROJECTS: Project[] = [
   {
     id: "5",
     title: "위시 펀딩",
-    thumbnail: "/assets/image/project/thumbnail/wish-funding.png",
+    thumbnail: "/assets/image/project/thumbnail/wish-funding.webp",
     mainTechStack: ["Next.js", "TypeScript", "Material UI"],
     allTechStack: [
       {
         name: "Next.js",
-        value: "/assets/icon/nextjs.png",
+        value: "/assets/icon/nextjs.webp",
       },
       {
         name: "TypeScript",
-        value: "/assets/icon/typescript.png",
+        value: "/assets/icon/typescript.webp",
       },
       {
         name: "Material UI",
-        value: "/assets/icon/mui.png",
+        value: "/assets/icon/mui.webp",
       },
     ],
     description: "생일 / 결혼 선물을 위한 크라우드 펀딩 앱입니다.",
@@ -58,44 +58,44 @@ export const PROJECTS: Project[] = [
   {
     id: "1",
     title: "돌돌밋",
-    thumbnail: "/assets/image/project/thumbnail/doldolmeet.png",
+    thumbnail: "/assets/image/project/thumbnail/doldolmeet.webp",
     mainTechStack: ["Next.js", "TypeScript", "React Query", "OpenVidu"],
     allTechStack: [
       {
         name: "Next.js",
-        value: "/assets/icon/nextjs.png",
+        value: "/assets/icon/nextjs.webp",
       },
       {
         name: "TypeScript",
-        value: "/assets/icon/typescript.png",
+        value: "/assets/icon/typescript.webp",
       },
       {
         name: "React Query",
-        value: "/assets/icon/react_query.png",
+        value: "/assets/icon/react_query.webp",
       },
       {
         name: "Jotai",
-        value: "/assets/icon/jotai.png",
+        value: "/assets/icon/jotai.webp",
       },
       {
         name: "Material UI",
-        value: "/assets/icon/mui.png",
+        value: "/assets/icon/mui.webp",
       },
       {
         name: "OpenVidu",
-        value: "/assets/icon/openvidu.png",
+        value: "/assets/icon/openvidu.webp",
       },
       {
         name: "Spring",
-        value: "/assets/icon/spring.png",
+        value: "/assets/icon/spring.webp",
       },
       {
         name: "MySql",
-        value: "/assets/icon/mysql.png",
+        value: "/assets/icon/mysql.webp",
       },
       {
         name: "AWS",
-        value: "/assets/icon/aws.png",
+        value: "/assets/icon/aws.webp",
       },
     ],
     description:
@@ -129,20 +129,20 @@ export const PROJECTS: Project[] = [
   {
     id: "2",
     title: "포트폴리오 사이트",
-    thumbnail: "/assets/image/project/thumbnail/portfolio.png",
+    thumbnail: "/assets/image/project/thumbnail/portfolio.webp",
     mainTechStack: ["Next.js", "TypeScript", "Material UI"],
     allTechStack: [
       {
         name: "Next.js",
-        value: "/assets/icon/nextjs.png",
+        value: "/assets/icon/nextjs.webp",
       },
       {
         name: "TypeScript",
-        value: "/assets/icon/typescript.png",
+        value: "/assets/icon/typescript.webp",
       },
       {
         name: "Material UI",
-        value: "/assets/icon/mui.png",
+        value: "/assets/icon/mui.webp",
       },
     ],
     description: "개인 포트폴리오 사이트입니다.",
@@ -170,20 +170,20 @@ export const PROJECTS: Project[] = [
   {
     id: "3",
     title: "엑셀 Export / Import 모듈",
-    thumbnail: "/assets/image/project/thumbnail/excel.png",
+    thumbnail: "/assets/image/project/thumbnail/excel.webp",
     mainTechStack: ["Java", "Apache POI", "React"],
     allTechStack: [
       {
         name: "Java",
-        value: "/assets/icon/java.png",
+        value: "/assets/icon/java.webp",
       },
       {
         name: "Apache POI",
-        value: "/assets/icon/apache.png",
+        value: "/assets/icon/apache.webp",
       },
       {
         name: "React",
-        value: "/assets/icon/react.png",
+        value: "/assets/icon/react.webp",
       },
     ],
     description:
@@ -212,48 +212,48 @@ export const PROJECTS: Project[] = [
   {
     id: "4",
     title: "꾸며줘! 홈즈",
-    thumbnail: "/assets/image/project/thumbnail/homes.png",
+    thumbnail: "/assets/image/project/thumbnail/homes.webp",
     mainTechStack: ["Spring", "HTML", "jQuery", "Python"],
     allTechStack: [
       {
         name: "Spring",
-        value: "/assets/icon/spring.png",
+        value: "/assets/icon/spring.webp",
       },
       {
         name: "Bootstrap",
-        value: "/assets/icon/bootstrap.png",
+        value: "/assets/icon/bootstrap.webp",
       },
       {
         name: "jQuery",
-        value: "/assets/icon/jquery.png",
+        value: "/assets/icon/jquery.webp",
       },
       {
         name: "MyBatis",
-        value: "/assets/icon/mybatis.png",
+        value: "/assets/icon/mybatis.webp",
       },
       {
         name: "Oracle",
-        value: "/assets/icon/oracle.png",
+        value: "/assets/icon/oracle.webp",
       },
       {
         name: "Beautiful Soup",
-        value: "/assets/icon/python.png",
+        value: "/assets/icon/python.webp",
       },
       {
         name: "Selenium",
-        value: "/assets/icon/selenium.png",
+        value: "/assets/icon/selenium.webp",
       },
       {
         name: "Pandas",
-        value: "/assets/icon/pandas.png",
+        value: "/assets/icon/pandas.webp",
       },
       {
         name: "Numpy",
-        value: "/assets/icon/numpy.png",
+        value: "/assets/icon/numpy.webp",
       },
       {
         name: "Matplotlib",
-        value: "/assets/icon/matplotlib.png",
+        value: "/assets/icon/matplotlib.webp",
       },
     ],
     description:

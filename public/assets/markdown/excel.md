@@ -48,7 +48,7 @@
 # 4. 기술적 챌린지
 
 ### 1️⃣ 계층 구조의 헤더 표현하기
-![header_example](/assets/markdown/embed/excel/header.png)
+![header_example](/assets/markdown/embed/excel/header.webp)
 - 위와 같이 그룹 헤더를 표현하기 위해선 셀을 병합할 영역을 계산해야 함
 - 이를 위해 `java.lang.reflect`를 사용하여 DTO 내부의 `@ExcelColumn`이 붙은 필드를 탐색하면서, 필드 객체 내에 `@ExcelColumn`이 붙은 자식 필드가 있는 경우는 그룹 헤더로 취급하고, 자식 필드가 없는 경우는 말단 헤더 노드로 취급함
 - BFS 방식으로 DTO 내의 모든 필드를 탐색하면서 각 헤더 노드의 행과 열의 시작 지점과 끝 지점의 인덱스를 계산함
@@ -97,7 +97,7 @@ export interface HeaderNode {
 엑셀 Export / Import 기능을 구현할 때 작성해야 할 코드를 최소 30-40% 가량 줄일 수 있었습니다.
 아래와 같은 엑셀 파일을 Export할 때, 기존에 작성해야 하는 코드와 엑셀 모듈을 도입했을 때의 코드를 비교하면 다음과 같습니다.
 
-![export_sample](/assets/markdown/embed/excel/excel_sample.png)
+![export_sample](/assets/markdown/embed/excel/excel_sample.webp)
 
 ### ⏮ Before: 기존의 코드
 - `CellStyle`을 생성하는 코드와 그룹 헤더의 셀을 병합하는 코드 등 작성해야 하는 코드의 양이 많다.

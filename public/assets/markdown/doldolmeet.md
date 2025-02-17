@@ -36,7 +36,7 @@
 
 # 4. 아키텍처
 
-![아키텍처](/assets/markdown/embed/doldolmeet/아키텍처.png)
+![아키텍처](/assets/markdown/embed/doldolmeet/아키텍처.webp)
 
 # 5. 기술적 챌린지
 

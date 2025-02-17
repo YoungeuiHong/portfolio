@@ -10,7 +10,7 @@ export default function Profile() {
       }}
     >
       <WobbleImage
-        src={"/assets/image/profile.jpg"}
+        src={"/assets/image/profile.webp"}
         alt={"profile"}
         priority={true}
       />

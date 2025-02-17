@@ -18,13 +18,13 @@
 # 2. 내가 맡은 역할
 
 ### 1️⃣ 메인 페이지 백엔드 / 프론트엔드 개발
-![메인페이지](/assets/markdown/embed/homes/main.gif)
+![메인페이지](/assets/markdown/embed/homes/main.webp)
 ### 2️⃣ 집들이 게시판 백엔드 / 프론트엔드 개발
-![집들이게시판](/assets/markdown/embed/homes/welcome1.gif)
-![집들이게시판](/assets/markdown/embed/homes/welcome2.gif)
-![집들이게시판](/assets/markdown/embed/homes/welcome3.png)
+![집들이게시판](/assets/markdown/embed/homes/welcome1.webp)
+![집들이게시판](/assets/markdown/embed/homes/welcome2.webp)
+![집들이게시판](/assets/markdown/embed/homes/welcome3.webp)
 ### 3️⃣ 결제 페이지 백엔드 / 프론트엔드 개발
-![결제페이지](/assets/markdown/embed/homes/payment.png)
+![결제페이지](/assets/markdown/embed/homes/payment.webp)
 ### 4️⃣ AOP를 사용한 사용자 데이터 수집
 * Spring의 AOP 기능을 사용하여 검색, 상품 조회 데이터를 수집함
 ```java
@@ -63,12 +63,12 @@ public void searchLog(JoinPoint jp) {
 ### 5️⃣ BeautifulSoup과 Selenium을 사용한 데이터 스크래핑 및 정제
 * 오늘의 집의 상품, 집들이 게시판 글, 질문과 답변, 리뷰 데이터를 수집하여 데이터 분석 및 웹 사이트의 더미 데이터로 활용함
 
-![데이터_스크래핑](/assets/markdown/embed/homes/scraping.png)
+![데이터_스크래핑](/assets/markdown/embed/homes/scraping.webp)
 
 ### 6️⃣ 데이터 분석 및 시각화
 * AOP를 통해 수집된 데이터와 오늘의 집에서 스크래핑한 데이터를 Pandas, NumPy, Matplotlib을 사용하여 분석하고 시각화함
 
-![데이터_시각화](/assets/markdown/embed/homes/graph1.png)
-![데이터_시각화](/assets/markdown/embed/homes/graph2.png)
-![데이터_시각화](/assets/markdown/embed/homes/graph3.png)
-![데이터_시각화](/assets/markdown/embed/homes/graph4.png)
+![데이터_시각화](/assets/markdown/embed/homes/graph1.webp)
+![데이터_시각화](/assets/markdown/embed/homes/graph2.webp)
+![데이터_시각화](/assets/markdown/embed/homes/graph3.webp)
+![데이터_시각화](/assets/markdown/embed/homes/graph4.webp)
