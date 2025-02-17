@@ -11,6 +11,40 @@ export interface CareerInfo {
 
 export const CAREERS: CareerInfo[] = [
   {
+    companyName: "TmaxAI",
+    companyLogo: "/assets/icon/tmaxcoreai.png",
+    duration: "2024.05.16 - 현재",
+    description:
+      "OCR 기술을 적용한 서비스 개발 프로젝트에서 프론트엔드 개발과 CI/CD 환경 구축을 담당했습니다.",
+    techStack: [
+      {
+        name: "React",
+        value: "/assets/icon/react.png",
+      },
+      {
+        name: "TypeScript",
+        value: "/assets/icon/typescript.png",
+      },
+      {
+        name: "Zustand",
+        value: "/assets/icon/zustand.png",
+      },
+      {
+        name: "Docker",
+        value: "/assets/icon/docker.png",
+      },
+      {
+        name: "GitLab CI/CD",
+        value: "/assets/icon/gitlab.png",
+      },
+      {
+        name: "Vite",
+        value: "/assets/icon/vite.png",
+      },
+    ],
+    mdFilePath: "/assets/markdown/tmaxai.md",
+  },
+  {
     companyName: "넥스트리",
     companyLogo: "/assets/icon/nextree.png",
     duration: "2021.09.13 - 2023.07.31",

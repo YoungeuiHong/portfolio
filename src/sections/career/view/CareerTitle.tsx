@@ -18,16 +18,19 @@ export default function CareerTitle({
       spacing={3}
       alignItems={{ xs: "center", sm: "flex-start" }}
     >
-      <Image
-        src={logoSrc}
-        alt={companyName}
-        width={100}
-        height={100}
+      <div
         style={{
+          position: "relative",
+          overflow: "hidden",
+          objectFit: "contain",
+          width: "100px",
+          aspectRatio: "1 / 1",
           borderRadius: 10,
           boxShadow: "4px 12px 40px 6px rgba(0,0,0,.09)",
         }}
-      />
+      >
+        <Image src={logoSrc} alt={companyName} fill={true} />
+      </div>
       <Stack direction={"column"}>
         <Typography sx={{ fontWeight: 700, fontSize: 30 }}>
           {companyName}

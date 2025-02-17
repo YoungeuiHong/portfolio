@@ -21,7 +21,7 @@ export const ACTIVITIES: Activity[] = [
   },
   {
     chip: "스터디",
-    date: "2021.10 - 2023.07 (1년 10개월)",
+    date: "2021.10 - 현재",
     title: "프로그래밍 스터디",
     content:
       "회사 프로젝트에 사용되는 기술을 빠르게 익히고, 꾸준한 학습 습관을 가지기 위해 매주 퇴근 후 스터디에 참여했습니다. React, ES6, TypeScript, Spring, MongoDB 등을 주제로 학습했습니다.",

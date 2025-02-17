@@ -22,7 +22,7 @@ export default function CareerBox({ career }: CareerBoxProps) {
   const { isMobile } = useViewport();
 
   return (
-    <Grid container maxWidth={"md"} sx={{ pt: 2 }}>
+    <Grid container maxWidth={"md"} sx={{ py: 2 }}>
       <Grid
         item
         xs={12}
