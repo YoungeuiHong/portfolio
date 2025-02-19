@@ -11,8 +11,10 @@ export default function AboutMe({ isMobile }: Props) {
     <Stack
       component={"div"}
       direction={"column"}
-      sx={{ width: isMobile ? "90vw" : 400 }}
-      alignItems={isMobile ? "center" : "flex-start"}
+      sx={{ width: "90vw" }}
+      alignItems="center"
+      // sx={{ width: isMobile ? "90vw" : 400 }}
+      // alignItems={isMobile ? "center" : "flex-start"}
     >
       <Typography sx={{ fontSize: "2em" }}>안녕하세요! 👋🏻</Typography>
       <div style={{ display: "flex" }}>

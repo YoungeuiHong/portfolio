@@ -1,10 +1,8 @@
 "use client";
 import { useState } from "react";
 import { Snackbar, Stack } from "@mui/material";
-import HomeIcon from "@mui/icons-material/Home";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
+import PublicIcon from "@mui/icons-material/Public";
 import TooltipIconButton from "@/components/button/TooltipIconButton";
 
 export default function Connects() {
@@ -24,7 +22,7 @@ export default function Connects() {
     <>
       <Stack direction={"row"}>
         <TooltipIconButton
-          icon={<HomeIcon />}
+          icon={<PublicIcon />}
           tooltip={"Blog"}
           onClick={() => window.open("https://velog.io/@youngeui_hong/posts")}
         />
@@ -34,18 +32,6 @@ export default function Connects() {
           onClick={() =>
             window.open("https://github.com/YoungeuiHong?tab=repositories")
           }
-        />
-        <TooltipIconButton
-          icon={<LinkedInIcon />}
-          tooltip={"LinkedIn"}
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/youngeui-hong")
-          }
-        />
-        <TooltipIconButton
-          icon={<EmailIcon />}
-          tooltip={"Email"}
-          onClick={copyToClipboard}
         />
       </Stack>
       <Snackbar

@@ -4,7 +4,7 @@ import { useViewport } from "@/hook/useViewport";
 import { ScrollNavigator } from "@/components/scroll";
 
 export default function Introduction() {
-  const { isMobile, isDesktop } = useViewport();
+  const { isMobile } = useViewport();
 
   return (
     <>
@@ -20,31 +20,33 @@ export default function Introduction() {
           xs={6}
           sx={{
             display: "flex",
-            justifyContent: isMobile ? "center" : "flex-end",
+            // justifyContent: isMobile ? "center" : "flex-end",
+            justifyContent: "center",
           }}
         >
           <Stack
             direction={"column"}
             spacing={3}
-            alignItems={isMobile ? "center" : "flex-start"}
+            // alignItems={isMobile ? "center" : "flex-start"}
+            alignItems="center"
             sx={{ minWidth: isMobile ? 0 : 350 }}
           >
             <AboutMe isMobile={isMobile} />
             <Connects />
           </Stack>
         </Grid>
-        {isDesktop && (
-          <Grid
-            item
-            xs={6}
-            sx={{
-              display: "flex",
-              justifyContent: "flex-start",
-            }}
-          >
-            <Profile />
-          </Grid>
-        )}
+        {/*{isDesktop && (*/}
+        {/*  <Grid*/}
+        {/*    item*/}
+        {/*    xs={6}*/}
+        {/*    sx={{*/}
+        {/*      display: "flex",*/}
+        {/*      justifyContent: "flex-start",*/}
+        {/*    }}*/}
+        {/*  >*/}
+        {/*    <Profile />*/}
+        {/*  </Grid>*/}
+        {/*)}*/}
       </Grid>
       <ScrollNavigator />
     </>
