@@ -15,6 +15,59 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    id: "6",
+    title: "스누돌팅",
+    thumbnail: "/assets/image/project/thumbnail/snu-dolting.webp",
+    mainTechStack: ["Next.js", "Supabase", "React Query", "vanilla-extract"],
+    allTechStack: [
+      {
+        name: "Next.js",
+        value: "/assets/icon/nextjs.webp",
+      },
+      {
+        name: "Supabase",
+        value: "/assets/icon/supabase.webp",
+      },
+      {
+        name: "FCM",
+        value: "/assets/icon/firebase.webp",
+      },
+      {
+        name: "React Query",
+        value: "/assets/icon/react_query.webp",
+      },
+      {
+        name: "vanilla-extract",
+        value: "/assets/icon/vanilla-extract.webp",
+      },
+      {
+        name: "GitHub Action",
+        value: "/assets/icon/github.webp",
+      },
+    ],
+    description: "서울대학교 동문 돌싱들을 위한 소개팅 앱입니다.",
+    links: [
+      {
+        icon: "description",
+        tooltip: "상세 설명",
+        href: "/project/6",
+        internal: true,
+      },
+      {
+        icon: "github",
+        tooltip: "GitHub",
+        href: "https://github.com/YoungeuiHong/snu-dolting",
+      },
+      {
+        icon: "public",
+        tooltip: "데모 사이트",
+        href: "https://www.snu-dolting-demo.store",
+      },
+    ],
+    detailTitle: "스누돌팅",
+    mdFilePath: "/assets/markdown/snu-dolting.md",
+  },
+  {
     id: "5",
     title: "위시 펀딩",
     thumbnail: "/assets/image/project/thumbnail/wish-funding.webp",
