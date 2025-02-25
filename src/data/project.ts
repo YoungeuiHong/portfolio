@@ -193,7 +193,7 @@ export const PROJECTS: Project[] = [
       {
         icon: "play_circle",
         tooltip: "데모",
-        href: "https://www.doldolmeet.store",
+        href: "https://www.doldolmeet.shop",
       },
     ],
     detailTitle: "돌아가며 만나는 나의 아이돌, 돌돌밋",
