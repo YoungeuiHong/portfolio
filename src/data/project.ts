@@ -129,6 +129,51 @@ export const PROJECTS: Project[] = [
     mdFilePath: "/assets/markdown/giftogether.md",
   },
   {
+    id: "7",
+    title: "디지털 브릿지",
+    thumbnail: "/assets/image/project/thumbnail/digital-bridge.webp",
+    mainTechStack: ["Next.js", "FastAPI", "OpenAI", "Selenium"],
+    allTechStack: [
+      {
+        name: "Next.js",
+        value: "/assets/icon/nextjs.webp",
+      },
+      {
+        name: "FastAPI",
+        value: "/assets/icon/fast-api.webp",
+      },
+      {
+        name: "OpenAI",
+        value: "/assets/icon/chat-gpt.webp",
+      },
+      {
+        name: "Document AI",
+        value: "/assets/icon/gcp.webp",
+      },
+      {
+        name: "Selenium",
+        value: "/assets/icon/selenium.webp",
+      },
+    ],
+    description:
+      "2024 항해커톤에서 개발한 디지털 약자를 위한 음성 인식 기반 KTX 예매 서비스입니다.",
+    links: [
+      {
+        icon: "description",
+        tooltip: "상세 설명",
+        href: "/project/7",
+        internal: true,
+      },
+      {
+        icon: "github",
+        tooltip: "GitHub",
+        href: "https://github.com/2024-hanghackathon-team-div",
+      },
+    ],
+    detailTitle: "디지털 브릿지",
+    mdFilePath: "/assets/markdown/digital-bridge.md",
+  },
+  {
     id: "1",
     title: "돌돌밋",
     thumbnail: "/assets/image/project/thumbnail/doldolmeet.webp",

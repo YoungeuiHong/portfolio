@@ -2,13 +2,9 @@
 import SectionLayout from "@/sections/layout";
 import ProjectCard from "@/components/card/ProjectCard";
 import { PROJECTS } from "@/data/project";
-import { SwiperSlide } from "swiper/react";
-import CarouselContainer from "@/components/carousel/CarouselContainer";
-import { Grid, Theme, useMediaQuery } from "@mui/material";
+import { Grid } from "@mui/material";
 
 export default function Projects() {
-  const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
-
   return (
     <SectionLayout
       id={"projects"}
