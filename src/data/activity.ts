@@ -26,7 +26,7 @@ export const ACTIVITIES: Activity[] = [
     content:
       "회사 프로젝트에 사용되는 기술을 빠르게 익히고, 꾸준한 학습 습관을 가지기 위해 매주 퇴근 후 스터디에 참여했습니다. React, ES6, TypeScript, Spring, MongoDB 등을 주제로 학습했습니다.",
     thumbnail: "/assets/image/activity/study.webp",
-    href: "https://www.notion.so/youngeui-hong/df62bb9d20964764a8cb9f767547515b?pvs=4",
+    href: "https://youngeui-hong.notion.site/6a26df1550fc443c81e6ae87d4b22bba?pvs=4",
   },
   {
     chip: "국비교육",
