@@ -15,28 +15,18 @@ export default function Projects() {
       title={"프로젝트"}
       stackSx={{ backgroundColor: "#FAFAFA" }}
     >
-      {smDown ? (
-        <Grid
-          container
-          maxWidth={"lg"}
-          spacing={{ xs: 0, sm: 3 }}
-          direction={{ xs: "column", sm: "row" }}
-        >
-          {PROJECTS.map((project, index) => (
-            <Grid key={index} item xs={12} md={6} lg={4}>
-              <ProjectCard project={project} />
-            </Grid>
-          ))}
-        </Grid>
-      ) : (
-        <CarouselContainer id={"project"}>
-          {PROJECTS.map((project) => (
-            <SwiperSlide key={`swiper-slide-${project.title}`}>
-              <ProjectCard project={project} />
-            </SwiperSlide>
-          ))}
-        </CarouselContainer>
-      )}
+      <Grid
+        container
+        maxWidth="lg"
+        spacing={{ xs: 0, sm: 3 }}
+        direction={{ xs: "column", sm: "row" }}
+      >
+        {PROJECTS.map((project, index) => (
+          <Grid key={index} item xs={12} sm={6} md={4}>
+            <ProjectCard project={project} />
+          </Grid>
+        ))}
+      </Grid>
     </SectionLayout>
   );
 }
