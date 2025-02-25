@@ -8,7 +8,7 @@
     * `useRef`를 활용하여 에디터의 DOM을 직접 참조하면서 필요한 순간에만 React state를 갱신하도록 구현함. 
     * 이를 통해 불필요한 리렌더링을 최소화하면서도, 사용자가 입력할 때 IME 입력이 방해 받거나, 커서가 예상치 못하게 이동하는 문제를 방지할 수 있었음. 
   * 하이라이팅 기능으로 인해 단순한 문자열 검색 • 치환 방식으로는 구현이 불가능했음
-    * `document.createTreeWalker`를 활용하여 DOM 내 텍스트 노드를 순회하며 검색 • 치환하는 방식으로 구현  
+    * `TreeWalker` API를 활용하여 DOM 내 텍스트 노드를 순회하며 검색 • 치환하는 방식으로 구현  
   
 <img src="/assets/markdown/embed/tmaxai/ocr_inspection.webp" />
   
