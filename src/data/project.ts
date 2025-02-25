@@ -69,8 +69,8 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "5",
-    title: "위시 펀딩",
-    thumbnail: "/assets/image/project/thumbnail/wish-funding.webp",
+    title: "기프투게더",
+    thumbnail: "/assets/image/project/thumbnail/giftogether.webp",
     mainTechStack: ["Next.js", "TypeScript", "Material UI"],
     allTechStack: [
       {
@@ -85,8 +85,28 @@ export const PROJECTS: Project[] = [
         name: "Material UI",
         value: "/assets/icon/mui.webp",
       },
+      {
+        name: "Recoil",
+        value: "/assets/icon/recoil.webp",
+      },
+      {
+        name: "React Hook Form",
+        value: "/assets/icon/react-hook-form.webp",
+      },
+      {
+        name: "Docker",
+        value: "/assets/icon/docker.webp",
+      },
+      {
+        name: "GitHub Actions",
+        value: "/assets/icon/github.webp",
+      },
+      {
+        name: "GCP",
+        value: "/assets/icon/gcp.webp",
+      },
     ],
-    description: "생일 / 결혼 선물을 위한 크라우드 펀딩 앱입니다.",
+    description: "금액대가 큰 선물을 위한 크라우드 펀딩 앱입니다.",
     links: [
       {
         icon: "description",
@@ -97,7 +117,7 @@ export const PROJECTS: Project[] = [
       {
         icon: "github",
         tooltip: "GitHub",
-        href: "https://github.com/coding-jjun/wishlist_funding_frontend",
+        href: "https://github.com/coding-jjun/Giftogether_frontend",
       },
       {
         icon: "article",
@@ -105,8 +125,8 @@ export const PROJECTS: Project[] = [
         href: "https://velog.io/@youngeui_hong/series/Wish-Funding",
       },
     ],
-    detailTitle: "위시 펀딩 (진행 중)",
-    mdFilePath: "/assets/markdown/wish-funding.md",
+    detailTitle: "기프투게더 (진행 중)",
+    mdFilePath: "/assets/markdown/giftogether.md",
   },
   {
     id: "1",
