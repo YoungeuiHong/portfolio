@@ -15,9 +15,4 @@ export const CERTIFICATES: Certification[] = [
     date: "2022.12",
     thumbnail: "/assets/icon/nextree.webp",
   },
-  {
-    name: "제71회 총동창회장상",
-    date: "2017.08",
-    thumbnail: "/assets/icon/snu.webp",
-  },
 ];
