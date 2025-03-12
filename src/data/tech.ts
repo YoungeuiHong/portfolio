@@ -17,8 +17,8 @@ export const FRONTEND_TECH_STACK: TechInfo[] = [
     icon: "/assets/icon/typescript.webp",
   },
   {
-    name: "Jotai",
-    icon: "/assets/icon/jotai.webp",
+    name: "Zustand",
+    icon: "/assets/icon/zustand.webp",
   },
   {
     name: "React Query",
@@ -28,13 +28,13 @@ export const FRONTEND_TECH_STACK: TechInfo[] = [
     name: "Material UI",
     icon: "/assets/icon/mui.webp",
   },
+  {
+    name: "styled-components",
+    icon: "/assets/icon/styled-components.webp",
+  },
 ];
 
 export const BACKEND_TECH_STACK: TechInfo[] = [
-  {
-    name: "Java",
-    icon: "/assets/icon/java.webp",
-  },
   {
     name: "Spring Boot",
     icon: "/assets/icon/spring.webp",
@@ -43,19 +43,19 @@ export const BACKEND_TECH_STACK: TechInfo[] = [
     name: "Mongo DB",
     icon: "/assets/icon/mongodb.webp",
   },
-  {
-    name: "MySQL",
-    icon: "/assets/icon/mysql.webp",
-  },
 ];
 
 export const DEVOPS_TECH_STACK: TechInfo[] = [
+  {
+    name: "Vite",
+    icon: "/assets/icon/vite.webp",
+  },
   {
     name: "Docker",
     icon: "/assets/icon/docker.webp",
   },
   {
-    name: "AWS",
-    icon: "/assets/icon/aws.webp",
+    name: "Nginx",
+    icon: "/assets/icon/nginx.webp",
   },
 ];

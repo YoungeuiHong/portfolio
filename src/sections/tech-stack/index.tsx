@@ -19,8 +19,8 @@ export default function TechStack() {
       <Grid container sx={{ maxWidth: 600 }}>
         {_.concat(
           FRONTEND_TECH_STACK,
-          BACKEND_TECH_STACK,
           DEVOPS_TECH_STACK,
+          BACKEND_TECH_STACK,
         ).map((tech, index) => (
           <Grid
             key={`tootip-image-icon-${tech.name}`}
