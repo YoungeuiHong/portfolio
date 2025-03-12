@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
       },
       {
         icon: "public",
-        tooltip: "데모 사이트",
+        tooltip: "사이트",
         href: "https://www.snu-dolting-demo.store",
       },
     ],
@@ -166,13 +166,8 @@ export const PROJECTS: Project[] = [
         tooltip: "GitHub",
         href: "https://github.com/coding-jjun/Giftogether_frontend",
       },
-      {
-        icon: "article",
-        tooltip: "관련 포스팅",
-        href: "https://velog.io/@youngeui_hong/series/Wish-Funding",
-      },
     ],
-    detailTitle: "기프투게더 (진행 중)",
+    detailTitle: "기프투게더",
     mdFilePath: "/assets/markdown/giftogether.md",
   },
   {
@@ -255,7 +250,7 @@ export const PROJECTS: Project[] = [
         value: "/assets/icon/spring.webp",
       },
       {
-        name: "MySql",
+        name: "MySQL",
         value: "/assets/icon/mysql.webp",
       },
       {
@@ -276,11 +271,6 @@ export const PROJECTS: Project[] = [
         icon: "github",
         tooltip: "GitHub",
         href: "https://github.com/YoungeuiHong/doldolmeet_frontend",
-      },
-      {
-        icon: "article",
-        tooltip: "관련 포스팅",
-        href: "https://velog.io/@youngeui_hong/series/%EB%8F%8C%EC%95%84%EA%B0%80%EB%A9%B0-%EB%A7%8C%EB%82%98%EB%8A%94-%EB%82%98%EC%9D%98-%EC%95%84%EC%9D%B4%EB%8F%8C-%EB%8F%8C%EB%8F%8C%EB%B0%8B",
       },
       {
         icon: "play_circle",
@@ -324,8 +314,8 @@ export const PROJECTS: Project[] = [
         href: "https://github.com/YoungeuiHong/portfolio",
       },
       {
-        icon: "play_circle",
-        tooltip: "데모",
+        icon: "public",
+        tooltip: "사이트",
         href: "https://www.about-youngeui.com",
       },
     ],
@@ -367,7 +357,7 @@ export const PROJECTS: Project[] = [
       },
       {
         icon: "play_circle",
-        tooltip: "데모",
+        tooltip: "GitBook",
         href: "https://youngeuihong.gitbook.io/excel-export-import-util/",
       },
     ],
@@ -429,11 +419,6 @@ export const PROJECTS: Project[] = [
         tooltip: "상세 설명",
         href: "/project/4",
         internal: true,
-      },
-      {
-        icon: "play_circle",
-        tooltip: "발표자료",
-        href: "https://docs.google.com/presentation/d/1TnhlqGHAnw-OLZ4SMqtiggpxOwHqOIvG/edit?usp=drive_link&ouid=117851784509831081552&rtpof=true&sd=true",
       },
     ],
     detailTitle: "꾸며줘! 홈즈",

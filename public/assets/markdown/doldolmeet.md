@@ -4,6 +4,11 @@
 * __`who`__ : 백엔드 3명, 프론트엔드 3명 (SW사관학교 7기)
 * __`when`__ : 2023.11.08 - 2023.12.16 (5주)
 
+### 🛠️ 기술 스택
+* __Frontend__: Next.js, TypeScript, WebRTC, WebSockets, Jotai, MUI, Teachable Machine
+* __Backend__: Spring, MySQL, OpenVidu, Redis
+* __DevOps__: AWS, Docker
+
 ### 🙋🏻‍♀️ 내가 맡은 역할
 * FE 개발, BE 개발, UI/UX 디자인
 * 대기열, 영상통화, 채팅, 모션 인식 캡쳐 기능 구현

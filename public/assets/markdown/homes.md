@@ -9,6 +9,9 @@
 * BeautifulSoup과 Selenium을 사용하여 웹 페이지의 데이터를 스크래핑하는 방법
 * Pandas, NumPy, Matplotlib을 사용하여 데이터를 분석하고 시각화하는 방법
 
+### 🛠️ 기술 스택
+* Spring, Bootstrap, jQuery, MyBatis, Oracle, BeautifulSoup, Selenium, Pandas, NumPy, Matplotlib
+
 ### 🙋🏻‍♀️ 내가 맡은 역할
 * 메인 화면, 집들이 게시판 백엔드 / 프론트엔드 개발
 * AOP를 사용한 사용자 데이터 수집

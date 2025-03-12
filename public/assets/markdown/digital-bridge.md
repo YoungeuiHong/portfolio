@@ -6,6 +6,11 @@
 * __팀원__: 4명
 * __역할__: 프론트엔드 및 백엔드 개발
 
+# 🛠️ 기술 스택
+* __프론트엔드__: Next.js, TypeScript
+* __백엔드__: FastAPI, Selenium WebDriver
+* __AI__: Chat GPT, OpenAI Text to Speech, GCP Document AI
+
 # 🔎 기획 의도
 * 오픈소스 AI를 활용해 디지털 소외 문제를 해결하고자 함.
 * 온라인 예매가 익숙하지 않은 어르신들은 표를 구하지 못해 입석으로 서서 가시거나, 표가 나올 때까지 기차역에서 오랜 시간을 기다리시는 경우가 많음.
@@ -46,7 +51,3 @@
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/_IbHw-469A4?si=nSbuVhz1P5FW_vja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-# 🛠️ 기술 스택
-* __프론트엔드__: Next.js, TypeScript
-* __백엔드__: FastAPI, Selenium WebDriver
-* __AI__: Chat GPT, OpenAI Text to Speech, GCP Document AI
