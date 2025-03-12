@@ -68,6 +68,53 @@ export const PROJECTS: Project[] = [
     mdFilePath: "/assets/markdown/snu-dolting.md",
   },
   {
+    id: "8",
+    title: "quill-footnote",
+    thumbnail: "/assets/image/project/thumbnail/quill-footnote.webp",
+    mainTechStack: ["Quill", "Rollup", "TypeScript"],
+    allTechStack: [
+      {
+        name: "Quill",
+        value: "/assets/icon/quill.webp",
+      },
+      {
+        name: "Rollup",
+        value: "/assets/icon/rollup.webp",
+      },
+      {
+        name: "TypeScript",
+        value: "/assets/icon/typescript.webp",
+      },
+    ],
+    description:
+      "Quill 에디터에서 각주 기능을 사용할 수 있도록 개발한 오픈소스 라이브러리입니다.",
+    links: [
+      {
+        icon: "description",
+        tooltip: "상세 설명",
+        href: "/project/8",
+        internal: true,
+      },
+      {
+        icon: "github",
+        tooltip: "GitHub",
+        href: "https://github.com/YoungeuiHong/quill-footnote",
+      },
+      {
+        icon: "public",
+        tooltip: "NPM",
+        href: "https://www.npmjs.com/package/quill-footnote",
+      },
+      {
+        icon: "play_circle",
+        tooltip: "데모",
+        href: "https://codesandbox.io/p/github/YoungeuiHong/quill-footnote-demo/main",
+      },
+    ],
+    detailTitle: "quill-footnote",
+    mdFilePath: "/assets/markdown/quill-footnote.md",
+  },
+  {
     id: "5",
     title: "기프투게더",
     thumbnail: "/assets/image/project/thumbnail/giftogether.webp",
