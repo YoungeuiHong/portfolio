@@ -35,6 +35,9 @@ __[💻 GitHub 코드](https://github.com/YoungeuiHong/snu-dolting)__
 - 이를 해결하기 위해 React Query의 캐싱 기능을 활용하여 불필요한 API 호출을 최소화했습니다.
 - 캐싱된 데이터를 즉시 보여주면서, 백그라운드에서 최신 데이터로 동기화하는 방식으로 UX를 개선했습니다.
 
+## 5️⃣ 이미지 최적화
+- Sharp를 활용한 이미지 압축 및 리사이징을 적용하여 스토리지 사용량을 약 90% 절감하고, 로딩 속도를 개선했습니다.
+
 # 4. 주요 기능
 ## 1️⃣ 회원가입
 ![회원가입](/assets/markdown/embed/snu-dolting/signup.webp)
